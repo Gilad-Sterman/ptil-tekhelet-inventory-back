@@ -15,6 +15,7 @@ async function query(filterBy = { txt: '' }) {
                 { createdBy: { $regex: filterBy.txt, $options: 'i' } }],
         }
         if (filterBy.tags !== 'all') criteria.tags = { $in: filterBy.tags }
+        if (filterBy.likedByUsers !== 'all') criteria.likedByUsers = { $in: filterBy.likedByUsers }
 
         const collection = await dbService.getCollection('station')
         let stations = await collection.find(criteria).sort({ [sortBy]: 1 }).toArray()

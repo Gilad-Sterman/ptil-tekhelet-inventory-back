@@ -4,12 +4,13 @@ import { stationService } from "./station.service.js";
 
 
 export async function getStations(req, res) {
-    console.log(process.env.ATLAS_SECRET)
     try {
         const tags = (req.query.tags) ? req.query.tags.split(',') : 'all'
+        const likedByUsers = (req.query.likedByUsers) ? req.query.likedByUsers.split(',') : 'all'
         const filterBy = {
             txt: req.query.txt || '',
             sortBy: req.query.sortBy || 'name',
+            likedByUsers,
             tags,
         }
         logger.debug('Getting stations', filterBy)
