@@ -7,7 +7,7 @@ const { ObjectId } = mongodb
 export const userService = {
     query,
     getById,
-    getByUsername,
+    getByEmail,
     remove,
     update,
     add
@@ -44,13 +44,13 @@ async function getById(userId) {
         throw err
     }
 }
-async function getByUsername(username) {
+async function getByEmail(email) {
     try {
         const collection = await dbService.getCollection('user')
-        const user = await collection.findOne({ username })
+        const user = await collection.findOne({ email })
         return user
     } catch (err) {
-        logger.error(`while finding user ${username}`, err)
+        logger.error(`while finding user ${email}`, err)
         throw err
     }
 }
@@ -70,7 +70,7 @@ async function update(user) {
         // peek only updatable fields!
         const userToSave = {
             _id: ObjectId(user._id),
-            username: user.username,
+            email: user.email,
             fullname: user.fullname,
             likedSongs: user.likedSongs,
             imgUrl: user.imgUrl
@@ -87,12 +87,12 @@ async function update(user) {
 async function add(user) {
     try {
         // Validate that there are no such user:
-        const existUser = await getByUsername(user.username)
-        if (existUser) throw new Error('Username taken')
+        const existUser = await getByEmail(user.email)
+        if (existUser) throw new Error('email already exist')
 
         // peek only updatable fields!
         const userToAdd = {
-            username: user.username,
+            email: user.email,
             password: user.password,
             fullname: user.fullname,
             imgUrl: './../../public/img/user.svg',
@@ -114,7 +114,7 @@ function _buildCriteria(filterBy) {
         const txtCriteria = { $regex: filterBy.txt, $options: 'i' }
         criteria.$or = [
             {
-                username: txtCriteria
+                email: txtCriteria
             },
             {
                 fullname: txtCriteria

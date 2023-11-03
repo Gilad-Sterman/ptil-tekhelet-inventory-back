@@ -15,6 +15,7 @@ export async function getUsers(req, res) {
     try {
         const filterBy = {
             txt: req.query?.txt || '',
+            likedByUser: req.query?.likedByUser || "all"
         }
         const users = await userService.query(filterBy)
         res.send(users)

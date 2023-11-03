@@ -6,7 +6,7 @@ import { stationService } from "./station.service.js";
 export async function getStations(req, res) {
     try {
         const tags = (req.query.tags) ? req.query.tags.split(',') : 'all'
-        const likedByUsers = (req.query.likedByUsers) ? req.query.likedByUsers.split(',') : 'all'
+        const likedByUsers = req.query.likedByUsers.split(',')
         const filterBy = {
             txt: req.query.txt || '',
             sortBy: req.query.sortBy || 'name',
