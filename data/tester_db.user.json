@@ -1,0 +1,41 @@
+[{
+  "_id": {
+    "$oid": "65181b304a1c3aa0b409c022"
+  },
+  "username": "gilad",
+  "password": "$2b$10$GPOGqQ3/hrgsjsvJTIxt6OUVc9JUGJc2jgc6Ou37A33n.Pf8pfvPW",
+  "fullname": "Gilad s",
+  "isAdmin": true
+},
+{
+  "_id": {
+    "$oid": "65181c214a1c3aa0b409c023"
+  },
+  "username": "user1",
+  "password": "$2b$10$Kyg68FuJmnk1FBrQFDPygeVxjIO9gWyhDoOIfxthzGgV0FBt5kO1O",
+  "fullname": "user user"
+},
+{
+  "_id": {
+    "$oid": "65181fe6e23865065cfa4df8"
+  },
+  "username": "juki",
+  "password": "$2b$10$BWI5N3pPV/mcp/AaDbrCVeRYGA.K5HyR8M2brUXOo3dbflagtds8a",
+  "fullname": "juki ja"
+},
+{
+  "_id": {
+    "$oid": "6518233ae23865065cfa4df9"
+  },
+  "username": "newu",
+  "password": "$2b$10$.r0CWRUK4kBAhefZ0Qw3JuMKgwGBhXNQtNJAbi2zfllKK1ve/qe82",
+  "fullname": "new user"
+},
+{
+  "_id": {
+    "$oid": "651829fae23865065cfa4dfa"
+  },
+  "username": "Nimrod",
+  "password": "$2b$10$JDnxGiNCfR7qCl8Euhc3Oei5lP0Zx381CbV7uyD8xHrk8BqRsxdHe",
+  "fullname": "Nimrod Bar"
+}]
