@@ -11,7 +11,7 @@ async function query(filterBy = { txt: '' }) {
     try {
         const criteria = {
             $or: [
-                { name: { $regex: filterBy.txt, $options: 'i' }},
+                { name: { $regex: filterBy.txt, $options: 'i' } },
                 { createdBy: { $regex: filterBy.txt, $options: 'i' } }],
         }
         if (filterBy.tags !== 'all') criteria.tags = { $in: filterBy.tags }
@@ -64,6 +64,7 @@ async function update(station) {
         const stationToSave = {
             name: station.name,
             songs: station.songs,
+            likedByUsers: station.likedByUsers,
             tags: station.tags,
             imgUrl: station.imgUrl,
             createdAt: station.createdAt,
