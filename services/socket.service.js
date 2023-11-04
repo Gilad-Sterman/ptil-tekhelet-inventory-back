@@ -23,26 +23,46 @@ export function setupSocketAPI(http) {
             socket.join(topic)
             socket.myTopic = topic
         })
-        socket.on('chat-send-msg', msg => {
-            logger.info(`New chat msg from socket [id: ${socket.id}], emitting to topic ${socket.myTopic}`)
+        socket.on('send-invite', user => {
+            const userId = user._id
+            logger.info(`New invitation from socket [id: ${socket.id}], emitting to all except user ${userId}`)
             // emits to all sockets:
             // gIo.emit('chat addMsg', msg)
             // emits only to sockets in the same room
-            gIo.to(socket.myTopic).emit('chat-add-msg', msg)
+            // gIo.to(socket.myTopic).emit('chat-add-msg', msg)
+            broadcast({ type: 'invite-request', data: user, userId })
         })
-        socket.on('chat-user-typing', msg => {
-            logger.info(`User typing msg from socket [id: ${socket.id}], emitting to topic ${socket.myTopic}`)
+        socket.on('request-status', answer => {
+            const userId = answer.user._id
+            logger.info(`New answer from socket [id: ${socket.id}], emitting to user ${userId}`)
             // emits to all sockets:
             // gIo.emit('chat addMsg', msg)
             // emits only to sockets in the same room
-            gIo.to(socket.myTopic).emit('chat-user-type', msg)
+            // gIo.to(socket.myTopic).emit('chat-add-msg', msg)
+            emitToUser({ type: 'invite-answer', data: answer, userId })
+        })
+        socket.on('play-station', request => {
+            const userId = request.user._id
+            logger.info(`User played station from socket [id: ${socket.id}], emitting to all except user ${userId}`)
+            // emits to all sockets:
+            // gIo.emit('chat addMsg', msg)
+            // emits only to sockets in the same room
+            broadcast({ type: 'station-playing', data: request, userId })
+        })
+        socket.on('pause-station', request => {
+            const userId = request.user._id
+            logger.info(`User played station from socket [id: ${socket.id}], emitting to all except user ${userId}`)
+            // emits to all sockets:
+            // gIo.emit('chat addMsg', msg)
+            // emits only to sockets in the same room
+            broadcast({ type: 'station-paused', data: request, userId })
         })
         socket.on('user-watch', userId => {
             logger.info(`user-watch from socket [id: ${socket.id}], on user ${userId}`)
             socket.join('watching:' + userId)
 
         })
-        
+
 
         // Auth
         socket.on('set-user-socket', userId => {
