@@ -18,7 +18,7 @@ export function setupSocketAPI(http) {
 
         socket.on('send-invite', async (data) => {
             const fromUser = data.currUser
-            const {userEmail} = data
+            const { userEmail } = data
             const toUser = await userService.getByEmail(userEmail)
             const toUserId = toUser._id
             logger.info(`New invitation from socket [id: ${socket.id}], emitting to user ${toUser.fullname}`)
@@ -41,7 +41,6 @@ export function setupSocketAPI(http) {
         })
 
 
-        // Auth
         socket.on('set-user-socket', userId => {
             logger.info(`Setting socket.userId = ${userId} for socket [id: ${socket.id}]`)
             socket.userId = userId
@@ -71,8 +70,7 @@ async function emitToUser({ type, data, userId }) {
     }
 }
 
-// If possible, send to all sockets BUT not the current socket 
-// Optionally, broadcast to a room / to all
+
 async function broadcast({ type, data, room = null, userId }) {
     userId = userId.toString()
     logger.info(`Broadcasting event: ${type}`)
@@ -98,19 +96,13 @@ async function _getUserSocket(userId) {
     return socket
 }
 async function _getAllSockets() {
-    // return all Socket instances
     const sockets = await gIo.fetchSockets()
     return sockets
 }
 
 export const socketService = {
-    // set up the sockets service and define the API
     setupSocketAPI,
-    // emit to everyone / everyone in a specific room (label)
     emitTo,
-    // emit to a specific user (if currently active in system)
     emitToUser,
-    // Send to all sockets BUT not the current socket - if found
-    // (otherwise broadcast to a room / to all)
     broadcast,
 }

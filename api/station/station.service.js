@@ -3,7 +3,6 @@ const { ObjectId } = mongodb
 
 import { dbService } from '../../services/db.service.js'
 import { logger } from '../../services/logger.service.js'
-import { utilService } from '../../services/util.service.js'
 
 
 async function query(filterBy = { txt: '' }) {
@@ -65,6 +64,7 @@ async function update(station) {
             name: station.name,
             songs: station.songs,
             likedByUsers: station.likedByUsers,
+            desc: station.desc,
             tags: station.tags,
             imgUrl: station.imgUrl,
             createdAt: station.createdAt,
