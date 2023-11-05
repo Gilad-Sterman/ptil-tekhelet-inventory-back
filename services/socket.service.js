@@ -1,3 +1,4 @@
+import { userService } from '../api/user/user.service.js'
 import { logger } from './logger.service.js'
 import { Server } from 'socket.io'
 
@@ -14,53 +15,29 @@ export function setupSocketAPI(http) {
         socket.on('disconnect', socket => {
             logger.info(`Socket disconnected [id: ${socket.id}]`)
         })
-        socket.on('chat-set-topic', topic => {
-            if (socket.myTopic === topic) return
-            if (socket.myTopic) {
-                socket.leave(socket.myTopic)
-                logger.info(`Socket is leaving topic ${socket.myTopic} [id: ${socket.id}]`)
-            }
-            socket.join(topic)
-            socket.myTopic = topic
-        })
-        socket.on('send-invite', user => {
-            const userId = user._id
-            logger.info(`New invitation from socket [id: ${socket.id}], emitting to all except user ${userId}`)
-            // emits to all sockets:
-            // gIo.emit('chat addMsg', msg)
-            // emits only to sockets in the same room
-            // gIo.to(socket.myTopic).emit('chat-add-msg', msg)
-            broadcast({ type: 'invite-request', data: user, userId })
+
+        socket.on('send-invite', async (data) => {
+            const fromUser = data.currUser
+            const {userEmail} = data
+            const toUser = await userService.getByEmail(userEmail)
+            const toUserId = toUser._id
+            logger.info(`New invitation from socket [id: ${socket.id}], emitting to user ${toUser.fullname}`)
+            emitToUser({ type: 'invite-request', data: fromUser, userId: toUserId })
         })
         socket.on('request-status', answer => {
             const userId = answer.user._id
             logger.info(`New answer from socket [id: ${socket.id}], emitting to user ${userId}`)
-            // emits to all sockets:
-            // gIo.emit('chat addMsg', msg)
-            // emits only to sockets in the same room
-            // gIo.to(socket.myTopic).emit('chat-add-msg', msg)
             emitToUser({ type: 'invite-answer', data: answer, userId })
         })
         socket.on('play-station', request => {
             const userId = request.user._id
             logger.info(`User played station from socket [id: ${socket.id}], emitting to all except user ${userId}`)
-            // emits to all sockets:
-            // gIo.emit('chat addMsg', msg)
-            // emits only to sockets in the same room
             broadcast({ type: 'station-playing', data: request, userId })
         })
         socket.on('pause-station', request => {
             const userId = request.user._id
             logger.info(`User played station from socket [id: ${socket.id}], emitting to all except user ${userId}`)
-            // emits to all sockets:
-            // gIo.emit('chat addMsg', msg)
-            // emits only to sockets in the same room
             broadcast({ type: 'station-paused', data: request, userId })
-        })
-        socket.on('user-watch', userId => {
-            logger.info(`user-watch from socket [id: ${socket.id}], on user ${userId}`)
-            socket.join('watching:' + userId)
-
         })
 
 
@@ -91,7 +68,6 @@ async function emitToUser({ type, data, userId }) {
         socket.emit(type, data)
     } else {
         logger.info(`No active socket for user: ${userId}`)
-        // _printSockets()
     }
 }
 
