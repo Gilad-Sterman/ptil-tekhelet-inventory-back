@@ -1,42 +1,951 @@
 [
     {
-        "name": "ANTI",
+        "name": "Daily Mix 1",
         "tags": [
-            "vibe",
-            "Trending",
-            "R&B",
-            "Soul",
-            "Divas"
+            "Made For You"
         ],
         "desc": "",
         "songs": [
             {
-                "id": "7b2kj5",
+                "id": "3gqqse",
+                "title": "The Great Gig In The Sky",
+                "artist": "Pink Floyd",
+                "album": "Dark side of thr moon",
+                "url": "https://www.youtube.com/watch?v=mPGv8L3a_sY&list=PL3PhWT10BW3Urh8ZXXpuU9h526ChwgWKy&index=5",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194250/Album_cover4_tblibx.jpg",
+                "addedBy": "Gilad",
+                "duration": "3:33",
+                "addedAt": 1699185189657
+            },
+            {
+                "id": "8nvok3",
+                "title": "Bohemian Rhapsody",
+                "artist": "Queen",
+                "album": " A Night At the Opera",
+                "url": "https://www.youtube.com/watch?v=kZVH8Q2UqaA&list=PLBnJv6rImVe9XXPLwK2CvysVd_CnrYB81&index=11",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194232/Queen_Album_yt1hwf.png",
+                "addedBy": "Gilad",
+                "duration": "3:39",
+                "addedAt": 1699022934381
+            },
+            {
+                "id": "n03jw6",
+                "title": "Love On The Brain",
+                "artist": "Rihanna",
+                "album": " Anti",
+                "url": "https://www.youtube.com/watch?v=Ni7rKJpQReU&list=PLVP1nukhQ7IkYT9Juzxp5rHlLLPiXzMw8&index=11",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194247/Album_cover1_ebopdz.png",
+                "addedBy": "Gilad",
+                "duration": "3:39",
+                "addedAt": 1699197867215
+            },
+            {
+                "id": "zqhhck",
+                "title": "Oh! Darling!",
+                "artist": "The Beatles",
+                "album": "Abby Road",
+                "url": "https://www.youtube.com/watch?v=erMgpfiOMSU&list=OLAK5uy_k2JcEE3_maNjnVBKU2s1JjhaZ4rxwgaME&index=5",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699207125/abby_road_wue6vz.jpg",
+                "addedBy": "Guest",
+                "duration": "4:39",
+                "addedAt": 1699126312038
+            },
+            {
+                "id": "cu8t6g",
+                "title": "Doo Wop",
+                "artist": "Lauryn Hill",
+                "album": " The Miseducation of Lauryn Hill",
+                "url": "https://www.youtube.com/watch?v=T6QKqFPRZSA&ab_channel=laurynhillvevo",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194248/Album_cover3_rmsuaj.jpg",
+                "addedBy": "Guest",
+                "duration": "3:56",
+                "addedAt": 1698896514124
+            }
+        ],
+        "likedByUsers": [],
+        "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194255/daily_mix_1_ckdbid.jpg",
+        "createdBy": "Songify",
+        "createdAt": 1698902287531
+    },
+    {
+        "name": "Daily Mix 2",
+        "tags": [
+            "Made For You"
+        ],
+        "desc": "",
+        "songs": [
+            {
+                "id": "f3hwb3",
+                "title": "Come Together!",
+                "artist": "The Beatles",
+                "album": "Abby Road",
+                "url": "https://www.youtube.com/watch?v=45cYwDMibGo&list=OLAK5uy_k2JcEE3_maNjnVBKU2s1JjhaZ4rxwgaME&index=2",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699207125/abby_road_wue6vz.jpg",
+                "addedBy": "Guest",
+                "duration": "4:39",
+                "addedAt": 1699084145795
+            },
+            {
+                "id": "i6ff5c",
+                "title": "Love Of My Life",
+                "artist": "Queen",
+                "album": " A Night At the Opera",
+                "url": "https://www.youtube.com/watch?v=2bqm4gRY3mA&list=PLBnJv6rImVe9XXPLwK2CvysVd_CnrYB81&index=9",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194232/Queen_Album_yt1hwf.png",
+                "addedBy": "Gilad",
+                "duration": "3:39",
+                "addedAt": 1698969423883
+            },
+            {
+                "id": "tcmm9s",
+                "title": "Time",
+                "artist": "Pink Floyd",
+                "album": "Dark side of thr moon",
+                "url": "https://www.youtube.com/watch?v=Qr0-7Ds79zo&ab_channel=PinkFloyd",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194250/Album_cover4_tblibx.jpg",
+                "addedBy": "Gilad",
+                "duration": "3:33",
+                "addedAt": 1698675007106
+            },
+            {
+                "id": "6m7ztz",
+                "title": "Wash.",
+                "artist": "Bon Iver",
+                "album": "Bon Iver",
+                "url": "https://www.youtube.com/watch?v=KMfL7rVAu0U&ab_channel=BonIver",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699205676/wash_bon_iver_i8fjta.jpg",
+                "addedBy": "Spotify",
+                "duration": "4:54",
+                "addedAt": 1698780770472
+            }
+        ],
+        "likedByUsers": [],
+        "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194213/daily-mix-2_s9gddo.jpg",
+        "createdBy": "Songify",
+        "createdAt": 1699212101851
+    },
+    {
+        "name": "Daily Mix 3",
+        "tags": [
+            "Made For You"
+        ],
+        "desc": "",
+        "songs": [
+            {
+                "id": "i6ff5c",
+                "title": "Love Of My Life",
+                "artist": "Queen",
+                "album": " A Night At the Opera",
+                "url": "https://www.youtube.com/watch?v=2bqm4gRY3mA&list=PLBnJv6rImVe9XXPLwK2CvysVd_CnrYB81&index=9",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194232/Queen_Album_yt1hwf.png",
+                "addedBy": "Gilad",
+                "duration": "3:39",
+                "addedAt": 1698969423883
+            },
+            {
+                "id": "zqhhck",
+                "title": "Oh! Darling!",
+                "artist": "The Beatles",
+                "album": "Abby Road",
+                "url": "https://www.youtube.com/watch?v=erMgpfiOMSU&list=OLAK5uy_k2JcEE3_maNjnVBKU2s1JjhaZ4rxwgaME&index=5",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699207125/abby_road_wue6vz.jpg",
+                "addedBy": "Guest",
+                "duration": "4:39",
+                "addedAt": 1699126312038
+            },
+            {
+                "id": "f3hwb3",
+                "title": "Come Together!",
+                "artist": "The Beatles",
+                "album": "Abby Road",
+                "url": "https://www.youtube.com/watch?v=45cYwDMibGo&list=OLAK5uy_k2JcEE3_maNjnVBKU2s1JjhaZ4rxwgaME&index=2",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699207125/abby_road_wue6vz.jpg",
+                "addedBy": "Guest",
+                "duration": "4:39",
+                "addedAt": 1699084145795
+            },
+            {
+                "id": "ljznfw",
+                "title": "I Want You",
+                "artist": "The Beatles",
+                "album": "Abby Road",
+                "url": "https://www.youtube.com/watch?v=wNL6bd7SpDE&list=OLAK5uy_k2JcEE3_maNjnVBKU2s1JjhaZ4rxwgaME&index=7",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699207125/abby_road_wue6vz.jpg",
+                "addedBy": "Guest",
+                "duration": "4:39",
+                "addedAt": 1699050571246
+            },
+            {
+                "id": "5wuq2s",
+                "title": "Dang!",
+                "artist": "Mac Miller",
+                "album": "The Divine Feminine",
+                "url": "https://www.youtube.com/watch?v=LR3GQfryp9M&ab_channel=MacMiller",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699205675/mac_miller_jgyzun.jpg",
+                "addedBy": "Guest",
+                "duration": "4:39",
+                "addedAt": 1698817405682
+            },
+            {
+                "id": "ppg52y",
+                "title": "Juicy",
+                "artist": "B.I.G",
+                "album": "Ready to Die.",
+                "url": "https://www.youtube.com/watch?v=7Y8VPQcPHhY&ab_channel=TheNotoriousB.I.G.-Topic",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194251/Album-cover2_llwqpw.jpg",
+                "addedBy": "Gilad",
+                "duration": "4:13",
+                "addedAt": 1698934936708
+            },
+            {
+                "id": "difn8o",
+                "title": "To Zion",
+                "artist": "Lauryn Hill",
+                "album": " The Miseducation of Lauryn Hill",
+                "url": "https://www.youtube.com/watch?v=1sQjh261rU8&ab_channel=JeNnILoVeSmUsIc",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194248/Album_cover3_rmsuaj.jpg",
+                "addedBy": "Guest",
+                "duration": "6:09",
+                "addedAt": 1699071347768
+            },
+            {
+                "id": "cu8t6g",
+                "title": "Doo Wop",
+                "artist": "Lauryn Hill",
+                "album": " The Miseducation of Lauryn Hill",
+                "url": "https://www.youtube.com/watch?v=T6QKqFPRZSA&ab_channel=laurynhillvevo",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194248/Album_cover3_rmsuaj.jpg",
+                "addedBy": "Guest",
+                "duration": "3:56",
+                "addedAt": 1698896514124
+            },
+            {
+                "id": "6m7ztz",
+                "title": "Wash.",
+                "artist": "Bon Iver",
+                "album": "Bon Iver",
+                "url": "https://www.youtube.com/watch?v=KMfL7rVAu0U&ab_channel=BonIver",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699205676/wash_bon_iver_i8fjta.jpg",
+                "addedBy": "Spotify",
+                "duration": "4:54",
+                "addedAt": 1698780770472
+            },
+            {
+                "id": "v6xgb7",
+                "title": "Hey Ya!",
+                "artist": "Outkast",
+                "album": "Speakerboxxx",
+                "url": "https://www.youtube.com/watch?v=JzqYDWBkX_Q&ab_channel=AOK",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194272/Outkast_in3z3w.jpg",
+                "addedBy": "Gilad",
+                "duration": "3:52",
+                "addedAt": 1698742145148
+            },
+            {
+                "id": "7ui6ge",
+                "title": "Roses",
+                "artist": "Outkast",
+                "album": "Speakerboxxx",
+                "url": "https://www.youtube.com/watch?v=sZ1vT0aPcYE&ab_channel=Outkast-Topic",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194272/Outkast_in3z3w.jpg",
+                "addedBy": "Guest",
+                "duration": "6:10",
+                "addedAt": 1699080355176
+            },
+            {
+                "id": "3vluuz",
+                "title": "Adorn",
+                "artist": "Miguel",
+                "album": "Dream",
+                "url": "https://www.youtube.com/watch?v=rtHhxrgfOcw&ab_channel=MiguelVEVO",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699205675/adorn_miguel_nnaldq.jpg",
+                "addedBy": "Guest",
+                "duration": "3:15",
+                "addedAt": 1698846166832
+            }
+        ],
+        "likedByUsers": [],
+        "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194256/daily_mix_3_cplkwz.jpg",
+        "createdBy": "Songify",
+        "createdAt": 1698658997206
+    },
+    {
+        "name": "Daily Mix 4",
+        "tags": [
+            "Made For You"
+        ],
+        "desc": "",
+        "songs": [
+            {
+                "id": "ehwq2i",
+                "title": "Money",
+                "artist": "Pink Floyd",
+                "album": "Dark side of thr moon",
+                "url": "https://www.youtube.com/watch?v=rwPM01cbQBc&list=PL3PhWT10BW3Urh8ZXXpuU9h526ChwgWKy&index=6",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194250/Album_cover4_tblibx.jpg",
+                "addedBy": "Gilad",
+                "duration": "3:33",
+                "addedAt": 1699100252522
+            },
+            {
+                "id": "3gqqse",
+                "title": "The Great Gig In The Sky",
+                "artist": "Pink Floyd",
+                "album": "Dark side of thr moon",
+                "url": "https://www.youtube.com/watch?v=mPGv8L3a_sY&list=PL3PhWT10BW3Urh8ZXXpuU9h526ChwgWKy&index=5",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194250/Album_cover4_tblibx.jpg",
+                "addedBy": "Gilad",
+                "duration": "3:33",
+                "addedAt": 1699185189657
+            },
+            {
+                "id": "nw5byc",
                 "title": "Consideration",
                 "artist": "Rihanna",
                 "album": "Anti",
                 "url": "https://www.youtube.com/watch?v=WSSShAOKYfo&ab_channel=Rihanna-Topic",
-                "imgUrl": "./../../public/img/Album_cover1.png",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194247/Album_cover1_ebopdz.png",
                 "addedBy": "Guest",
                 "duration": "2:41",
-                "addedAt": 1698940912618
+                "addedAt": 1698850214637
             },
             {
-                "id": "9kyrqt",
+                "id": "t6n3zm",
                 "title": "Work",
                 "artist": "Rihanna",
                 "album": " Anti",
                 "url": "https://www.youtube.com/watch?v=puxjq3p-fU0&ab_channel=Rihanna-Topic",
-                "imgUrl": "./../../public/img/Album_cover1.png",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194247/Album_cover1_ebopdz.png",
                 "addedBy": "Gilad",
                 "duration": "3:39",
-                "addedAt": 1698704214029
+                "addedAt": 1698767738447
+            },
+            {
+                "id": "n03jw6",
+                "title": "Love On The Brain",
+                "artist": "Rihanna",
+                "album": " Anti",
+                "url": "https://www.youtube.com/watch?v=Ni7rKJpQReU&list=PLVP1nukhQ7IkYT9Juzxp5rHlLLPiXzMw8&index=11",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194247/Album_cover1_ebopdz.png",
+                "addedBy": "Gilad",
+                "duration": "3:39",
+                "addedAt": 1699197867215
+            },
+            {
+                "id": "8nvok3",
+                "title": "Bohemian Rhapsody",
+                "artist": "Queen",
+                "album": " A Night At the Opera",
+                "url": "https://www.youtube.com/watch?v=kZVH8Q2UqaA&list=PLBnJv6rImVe9XXPLwK2CvysVd_CnrYB81&index=11",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194232/Queen_Album_yt1hwf.png",
+                "addedBy": "Gilad",
+                "duration": "3:39",
+                "addedAt": 1699022934381
             }
         ],
         "likedByUsers": [],
-        "imgUrl": "./../../public/img/Album_cover1.png",
-        "createdBy": "Rihanna",
-        "createdAt": 1698676520232
+        "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194214/daily-mix-4_odfsdk.jpg",
+        "createdBy": "Songify",
+        "createdAt": 1698818537811
+    },
+    {
+        "name": "Daily Mix 5",
+        "tags": [
+            "Made For You"
+        ],
+        "desc": "",
+        "songs": [
+            {
+                "id": "cu8t6g",
+                "title": "Doo Wop",
+                "artist": "Lauryn Hill",
+                "album": " The Miseducation of Lauryn Hill",
+                "url": "https://www.youtube.com/watch?v=T6QKqFPRZSA&ab_channel=laurynhillvevo",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194248/Album_cover3_rmsuaj.jpg",
+                "addedBy": "Guest",
+                "duration": "3:56",
+                "addedAt": 1698896514124
+            },
+            {
+                "id": "nw5byc",
+                "title": "Consideration",
+                "artist": "Rihanna",
+                "album": "Anti",
+                "url": "https://www.youtube.com/watch?v=WSSShAOKYfo&ab_channel=Rihanna-Topic",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194247/Album_cover1_ebopdz.png",
+                "addedBy": "Guest",
+                "duration": "2:41",
+                "addedAt": 1698850214637
+            },
+            {
+                "id": "6m7ztz",
+                "title": "Wash.",
+                "artist": "Bon Iver",
+                "album": "Bon Iver",
+                "url": "https://www.youtube.com/watch?v=KMfL7rVAu0U&ab_channel=BonIver",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699205676/wash_bon_iver_i8fjta.jpg",
+                "addedBy": "Spotify",
+                "duration": "4:54",
+                "addedAt": 1698780770472
+            }
+        ],
+        "likedByUsers": [],
+        "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194215/daily-mix-5_c7cgnx.jpg",
+        "createdBy": "Songify",
+        "createdAt": 1698893875186
+    },
+    {
+        "name": "Daily Mix 6",
+        "tags": [
+            "Made For You"
+        ],
+        "desc": "",
+        "songs": [
+            {
+                "id": "ljznfw",
+                "title": "I Want You",
+                "artist": "The Beatles",
+                "album": "Abby Road",
+                "url": "https://www.youtube.com/watch?v=wNL6bd7SpDE&list=OLAK5uy_k2JcEE3_maNjnVBKU2s1JjhaZ4rxwgaME&index=7",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699207125/abby_road_wue6vz.jpg",
+                "addedBy": "Guest",
+                "duration": "4:39",
+                "addedAt": 1699050571246
+            },
+            {
+                "id": "5wuq2s",
+                "title": "Dang!",
+                "artist": "Mac Miller",
+                "album": "The Divine Feminine",
+                "url": "https://www.youtube.com/watch?v=LR3GQfryp9M&ab_channel=MacMiller",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699205675/mac_miller_jgyzun.jpg",
+                "addedBy": "Guest",
+                "duration": "4:39",
+                "addedAt": 1698817405682
+            },
+            {
+                "id": "ppg52y",
+                "title": "Juicy",
+                "artist": "B.I.G",
+                "album": "Ready to Die.",
+                "url": "https://www.youtube.com/watch?v=7Y8VPQcPHhY&ab_channel=TheNotoriousB.I.G.-Topic",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194251/Album-cover2_llwqpw.jpg",
+                "addedBy": "Gilad",
+                "duration": "4:13",
+                "addedAt": 1698934936708
+            },
+            {
+                "id": "difn8o",
+                "title": "To Zion",
+                "artist": "Lauryn Hill",
+                "album": " The Miseducation of Lauryn Hill",
+                "url": "https://www.youtube.com/watch?v=1sQjh261rU8&ab_channel=JeNnILoVeSmUsIc",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194248/Album_cover3_rmsuaj.jpg",
+                "addedBy": "Guest",
+                "duration": "6:09",
+                "addedAt": 1699071347768
+            },
+            {
+                "id": "cu8t6g",
+                "title": "Doo Wop",
+                "artist": "Lauryn Hill",
+                "album": " The Miseducation of Lauryn Hill",
+                "url": "https://www.youtube.com/watch?v=T6QKqFPRZSA&ab_channel=laurynhillvevo",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194248/Album_cover3_rmsuaj.jpg",
+                "addedBy": "Guest",
+                "duration": "3:56",
+                "addedAt": 1698896514124
+            },
+            {
+                "id": "6m7ztz",
+                "title": "Wash.",
+                "artist": "Bon Iver",
+                "album": "Bon Iver",
+                "url": "https://www.youtube.com/watch?v=KMfL7rVAu0U&ab_channel=BonIver",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699205676/wash_bon_iver_i8fjta.jpg",
+                "addedBy": "Spotify",
+                "duration": "4:54",
+                "addedAt": 1698780770472
+            },
+            {
+                "id": "v6xgb7",
+                "title": "Hey Ya!",
+                "artist": "Outkast",
+                "album": "Speakerboxxx",
+                "url": "https://www.youtube.com/watch?v=JzqYDWBkX_Q&ab_channel=AOK",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194272/Outkast_in3z3w.jpg",
+                "addedBy": "Gilad",
+                "duration": "3:52",
+                "addedAt": 1698742145148
+            }
+        ],
+        "likedByUsers": [],
+        "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194217/daily-mix-6_ejocvp.jpg",
+        "createdBy": "Songify",
+        "createdAt": 1698761355163
+    },
+    {
+        "name": "Daily Mix 1",
+        "tags": [
+            "Made For You"
+        ],
+        "desc": "",
+        "songs": [
+            {
+                "id": "8nvok3",
+                "title": "Bohemian Rhapsody",
+                "artist": "Queen",
+                "album": " A Night At the Opera",
+                "url": "https://www.youtube.com/watch?v=kZVH8Q2UqaA&list=PLBnJv6rImVe9XXPLwK2CvysVd_CnrYB81&index=11",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194232/Queen_Album_yt1hwf.png",
+                "addedBy": "Gilad",
+                "duration": "3:39",
+                "addedAt": 1699022934381
+            },
+            {
+                "id": "n03jw6",
+                "title": "Love On The Brain",
+                "artist": "Rihanna",
+                "album": " Anti",
+                "url": "https://www.youtube.com/watch?v=Ni7rKJpQReU&list=PLVP1nukhQ7IkYT9Juzxp5rHlLLPiXzMw8&index=11",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194247/Album_cover1_ebopdz.png",
+                "addedBy": "Gilad",
+                "duration": "3:39",
+                "addedAt": 1699197867215
+            },
+            {
+                "id": "zqhhck",
+                "title": "Oh! Darling!",
+                "artist": "The Beatles",
+                "album": "Abby Road",
+                "url": "https://www.youtube.com/watch?v=erMgpfiOMSU&list=OLAK5uy_k2JcEE3_maNjnVBKU2s1JjhaZ4rxwgaME&index=5",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699207125/abby_road_wue6vz.jpg",
+                "addedBy": "Guest",
+                "duration": "4:39",
+                "addedAt": 1699126312038
+            },
+            {
+                "id": "6m7ztz",
+                "title": "Wash.",
+                "artist": "Bon Iver",
+                "album": "Bon Iver",
+                "url": "https://www.youtube.com/watch?v=KMfL7rVAu0U&ab_channel=BonIver",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699205676/wash_bon_iver_i8fjta.jpg",
+                "addedBy": "Spotify",
+                "duration": "4:54",
+                "addedAt": 1698780770472
+            },
+            {
+                "id": "tcmm9s",
+                "title": "Time",
+                "artist": "Pink Floyd",
+                "album": "Dark side of thr moon",
+                "url": "https://www.youtube.com/watch?v=Qr0-7Ds79zo&ab_channel=PinkFloyd",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194250/Album_cover4_tblibx.jpg",
+                "addedBy": "Gilad",
+                "duration": "3:33",
+                "addedAt": 1698675007106
+            },
+            {
+                "id": "difn8o",
+                "title": "To Zion",
+                "artist": "Lauryn Hill",
+                "album": " The Miseducation of Lauryn Hill",
+                "url": "https://www.youtube.com/watch?v=1sQjh261rU8&ab_channel=JeNnILoVeSmUsIc",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194248/Album_cover3_rmsuaj.jpg",
+                "addedBy": "Guest",
+                "duration": "6:09",
+                "addedAt": 1699071347768
+            },
+            {
+                "id": "nw5byc",
+                "title": "Consideration",
+                "artist": "Rihanna",
+                "album": "Anti",
+                "url": "https://www.youtube.com/watch?v=WSSShAOKYfo&ab_channel=Rihanna-Topic",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194247/Album_cover1_ebopdz.png",
+                "addedBy": "Guest",
+                "duration": "2:41",
+                "addedAt": 1698850214637
+            }
+        ],
+        "likedByUsers": [],
+        "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194571/daily-mix-1-_2_wmapjq.jpg",
+        "createdBy": "Songify",
+        "createdAt": 1698760993189
+    },
+    {
+        "name": "Daily Mix 2",
+        "tags": [
+            "Made For You"
+        ],
+        "desc": "",
+        "songs": [
+            {
+                "id": "tcmm9s",
+                "title": "Time",
+                "artist": "Pink Floyd",
+                "album": "Dark side of thr moon",
+                "url": "https://www.youtube.com/watch?v=Qr0-7Ds79zo&ab_channel=PinkFloyd",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194250/Album_cover4_tblibx.jpg",
+                "addedBy": "Gilad",
+                "duration": "3:33",
+                "addedAt": 1698675007106
+            },
+            {
+                "id": "500e5z",
+                "title": "Jump",
+                "artist": "Van Halen",
+                "album": "1984",
+                "url": "https://www.youtube.com/watch?v=ggJI9dKBk48&ab_channel=VanHalen-Topic",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699205676/jump_van_halen_wectxk.jpg",
+                "addedBy": "Gilad",
+                "duration": "3:59",
+                "addedAt": 1698864658598
+            },
+            {
+                "id": "3gqqse",
+                "title": "The Great Gig In The Sky",
+                "artist": "Pink Floyd",
+                "album": "Dark side of thr moon",
+                "url": "https://www.youtube.com/watch?v=mPGv8L3a_sY&list=PL3PhWT10BW3Urh8ZXXpuU9h526ChwgWKy&index=5",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194250/Album_cover4_tblibx.jpg",
+                "addedBy": "Gilad",
+                "duration": "3:33",
+                "addedAt": 1699185189657
+            },
+            {
+                "id": "nw5byc",
+                "title": "Consideration",
+                "artist": "Rihanna",
+                "album": "Anti",
+                "url": "https://www.youtube.com/watch?v=WSSShAOKYfo&ab_channel=Rihanna-Topic",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194247/Album_cover1_ebopdz.png",
+                "addedBy": "Guest",
+                "duration": "2:41",
+                "addedAt": 1698850214637
+            },
+            {
+                "id": "5wuq2s",
+                "title": "Dang!",
+                "artist": "Mac Miller",
+                "album": "The Divine Feminine",
+                "url": "https://www.youtube.com/watch?v=LR3GQfryp9M&ab_channel=MacMiller",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699205675/mac_miller_jgyzun.jpg",
+                "addedBy": "Guest",
+                "duration": "4:39",
+                "addedAt": 1698817405682
+            }
+        ],
+        "likedByUsers": [],
+        "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194571/daily-mix-2-_2_xe6pc2.jpg",
+        "createdBy": "Songify",
+        "createdAt": 1699159132427
+    },
+    {
+        "name": "Daily Mix 3",
+        "tags": [
+            "Made For You"
+        ],
+        "desc": "",
+        "songs": [
+            {
+                "id": "5wuq2s",
+                "title": "Dang!",
+                "artist": "Mac Miller",
+                "album": "The Divine Feminine",
+                "url": "https://www.youtube.com/watch?v=LR3GQfryp9M&ab_channel=MacMiller",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699205675/mac_miller_jgyzun.jpg",
+                "addedBy": "Guest",
+                "duration": "4:39",
+                "addedAt": 1698817405682
+            },
+            {
+                "id": "nw5byc",
+                "title": "Consideration",
+                "artist": "Rihanna",
+                "album": "Anti",
+                "url": "https://www.youtube.com/watch?v=WSSShAOKYfo&ab_channel=Rihanna-Topic",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194247/Album_cover1_ebopdz.png",
+                "addedBy": "Guest",
+                "duration": "2:41",
+                "addedAt": 1698850214637
+            },
+            {
+                "id": "t6n3zm",
+                "title": "Work",
+                "artist": "Rihanna",
+                "album": " Anti",
+                "url": "https://www.youtube.com/watch?v=puxjq3p-fU0&ab_channel=Rihanna-Topic",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194247/Album_cover1_ebopdz.png",
+                "addedBy": "Gilad",
+                "duration": "3:39",
+                "addedAt": 1698767738447
+            },
+            {
+                "id": "ppg52y",
+                "title": "Juicy",
+                "artist": "B.I.G",
+                "album": "Ready to Die.",
+                "url": "https://www.youtube.com/watch?v=7Y8VPQcPHhY&ab_channel=TheNotoriousB.I.G.-Topic",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194251/Album-cover2_llwqpw.jpg",
+                "addedBy": "Gilad",
+                "duration": "4:13",
+                "addedAt": 1698934936708
+            }
+        ],
+        "likedByUsers": [],
+        "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194571/daily-mix-3-_2_tjslky.jpg",
+        "createdBy": "Songify",
+        "createdAt": 1698910290989
+    },
+    {
+        "name": "Daily Mix 4",
+        "tags": [
+            "Made For You"
+        ],
+        "desc": "",
+        "songs": [
+            {
+                "id": "6m7ztz",
+                "title": "Wash.",
+                "artist": "Bon Iver",
+                "album": "Bon Iver",
+                "url": "https://www.youtube.com/watch?v=KMfL7rVAu0U&ab_channel=BonIver",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699205676/wash_bon_iver_i8fjta.jpg",
+                "addedBy": "Spotify",
+                "duration": "4:54",
+                "addedAt": 1698780770472
+            },
+            {
+                "id": "tcmm9s",
+                "title": "Time",
+                "artist": "Pink Floyd",
+                "album": "Dark side of thr moon",
+                "url": "https://www.youtube.com/watch?v=Qr0-7Ds79zo&ab_channel=PinkFloyd",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194250/Album_cover4_tblibx.jpg",
+                "addedBy": "Gilad",
+                "duration": "3:33",
+                "addedAt": 1698675007106
+            },
+            {
+                "id": "difn8o",
+                "title": "To Zion",
+                "artist": "Lauryn Hill",
+                "album": " The Miseducation of Lauryn Hill",
+                "url": "https://www.youtube.com/watch?v=1sQjh261rU8&ab_channel=JeNnILoVeSmUsIc",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194248/Album_cover3_rmsuaj.jpg",
+                "addedBy": "Guest",
+                "duration": "6:09",
+                "addedAt": 1699071347768
+            },
+            {
+                "id": "nw5byc",
+                "title": "Consideration",
+                "artist": "Rihanna",
+                "album": "Anti",
+                "url": "https://www.youtube.com/watch?v=WSSShAOKYfo&ab_channel=Rihanna-Topic",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194247/Album_cover1_ebopdz.png",
+                "addedBy": "Guest",
+                "duration": "2:41",
+                "addedAt": 1698850214637
+            }
+        ],
+        "likedByUsers": [],
+        "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194571/daily-mix-4-_2_aepfbd.jpg",
+        "createdBy": "Songify",
+        "createdAt": 1698923029028
+    },
+    {
+        "name": "Daily Mix 5",
+        "tags": [
+            "Made For You"
+        ],
+        "desc": "",
+        "songs": [
+            {
+                "id": "cu8t6g",
+                "title": "Doo Wop",
+                "artist": "Lauryn Hill",
+                "album": " The Miseducation of Lauryn Hill",
+                "url": "https://www.youtube.com/watch?v=T6QKqFPRZSA&ab_channel=laurynhillvevo",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194248/Album_cover3_rmsuaj.jpg",
+                "addedBy": "Guest",
+                "duration": "3:56",
+                "addedAt": 1698896514124
+            },
+            {
+                "id": "nw5byc",
+                "title": "Consideration",
+                "artist": "Rihanna",
+                "album": "Anti",
+                "url": "https://www.youtube.com/watch?v=WSSShAOKYfo&ab_channel=Rihanna-Topic",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194247/Album_cover1_ebopdz.png",
+                "addedBy": "Guest",
+                "duration": "2:41",
+                "addedAt": 1698850214637
+            },
+            {
+                "id": "6m7ztz",
+                "title": "Wash.",
+                "artist": "Bon Iver",
+                "album": "Bon Iver",
+                "url": "https://www.youtube.com/watch?v=KMfL7rVAu0U&ab_channel=BonIver",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699205676/wash_bon_iver_i8fjta.jpg",
+                "addedBy": "Spotify",
+                "duration": "4:54",
+                "addedAt": 1698780770472
+            }
+        ],
+        "likedByUsers": [],
+        "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194571/daily-mix-5-_2_dtops9.jpg",
+        "createdBy": "Songify",
+        "createdAt": 1699223938502
+    },
+    {
+        "name": "Daily Mix 6",
+        "tags": [
+            "Made For You"
+        ],
+        "desc": "",
+        "songs": [
+            {
+                "id": "i6ff5c",
+                "title": "Love Of My Life",
+                "artist": "Queen",
+                "album": " A Night At the Opera",
+                "url": "https://www.youtube.com/watch?v=2bqm4gRY3mA&list=PLBnJv6rImVe9XXPLwK2CvysVd_CnrYB81&index=9",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194232/Queen_Album_yt1hwf.png",
+                "addedBy": "Gilad",
+                "duration": "3:39",
+                "addedAt": 1698969423883
+            },
+            {
+                "id": "zqhhck",
+                "title": "Oh! Darling!",
+                "artist": "The Beatles",
+                "album": "Abby Road",
+                "url": "https://www.youtube.com/watch?v=erMgpfiOMSU&list=OLAK5uy_k2JcEE3_maNjnVBKU2s1JjhaZ4rxwgaME&index=5",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699207125/abby_road_wue6vz.jpg",
+                "addedBy": "Guest",
+                "duration": "4:39",
+                "addedAt": 1699126312038
+            },
+            {
+                "id": "f3hwb3",
+                "title": "Come Together!",
+                "artist": "The Beatles",
+                "album": "Abby Road",
+                "url": "https://www.youtube.com/watch?v=45cYwDMibGo&list=OLAK5uy_k2JcEE3_maNjnVBKU2s1JjhaZ4rxwgaME&index=2",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699207125/abby_road_wue6vz.jpg",
+                "addedBy": "Guest",
+                "duration": "4:39",
+                "addedAt": 1699084145795
+            },
+            {
+                "id": "ljznfw",
+                "title": "I Want You",
+                "artist": "The Beatles",
+                "album": "Abby Road",
+                "url": "https://www.youtube.com/watch?v=wNL6bd7SpDE&list=OLAK5uy_k2JcEE3_maNjnVBKU2s1JjhaZ4rxwgaME&index=7",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699207125/abby_road_wue6vz.jpg",
+                "addedBy": "Guest",
+                "duration": "4:39",
+                "addedAt": 1699050571246
+            },
+            {
+                "id": "5wuq2s",
+                "title": "Dang!",
+                "artist": "Mac Miller",
+                "album": "The Divine Feminine",
+                "url": "https://www.youtube.com/watch?v=LR3GQfryp9M&ab_channel=MacMiller",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699205675/mac_miller_jgyzun.jpg",
+                "addedBy": "Guest",
+                "duration": "4:39",
+                "addedAt": 1698817405682
+            },
+            {
+                "id": "ppg52y",
+                "title": "Juicy",
+                "artist": "B.I.G",
+                "album": "Ready to Die.",
+                "url": "https://www.youtube.com/watch?v=7Y8VPQcPHhY&ab_channel=TheNotoriousB.I.G.-Topic",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194251/Album-cover2_llwqpw.jpg",
+                "addedBy": "Gilad",
+                "duration": "4:13",
+                "addedAt": 1698934936708
+            },
+            {
+                "id": "difn8o",
+                "title": "To Zion",
+                "artist": "Lauryn Hill",
+                "album": " The Miseducation of Lauryn Hill",
+                "url": "https://www.youtube.com/watch?v=1sQjh261rU8&ab_channel=JeNnILoVeSmUsIc",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194248/Album_cover3_rmsuaj.jpg",
+                "addedBy": "Guest",
+                "duration": "6:09",
+                "addedAt": 1699071347768
+            },
+            {
+                "id": "cu8t6g",
+                "title": "Doo Wop",
+                "artist": "Lauryn Hill",
+                "album": " The Miseducation of Lauryn Hill",
+                "url": "https://www.youtube.com/watch?v=T6QKqFPRZSA&ab_channel=laurynhillvevo",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194248/Album_cover3_rmsuaj.jpg",
+                "addedBy": "Guest",
+                "duration": "3:56",
+                "addedAt": 1698896514124
+            },
+            {
+                "id": "6m7ztz",
+                "title": "Wash.",
+                "artist": "Bon Iver",
+                "album": "Bon Iver",
+                "url": "https://www.youtube.com/watch?v=KMfL7rVAu0U&ab_channel=BonIver",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699205676/wash_bon_iver_i8fjta.jpg",
+                "addedBy": "Spotify",
+                "duration": "4:54",
+                "addedAt": 1698780770472
+            },
+            {
+                "id": "v6xgb7",
+                "title": "Hey Ya!",
+                "artist": "Outkast",
+                "album": "Speakerboxxx",
+                "url": "https://www.youtube.com/watch?v=JzqYDWBkX_Q&ab_channel=AOK",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194272/Outkast_in3z3w.jpg",
+                "addedBy": "Gilad",
+                "duration": "3:52",
+                "addedAt": 1698742145148
+            },
+            {
+                "id": "7ui6ge",
+                "title": "Roses",
+                "artist": "Outkast",
+                "album": "Speakerboxxx",
+                "url": "https://www.youtube.com/watch?v=sZ1vT0aPcYE&ab_channel=Outkast-Topic",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194272/Outkast_in3z3w.jpg",
+                "addedBy": "Guest",
+                "duration": "6:10",
+                "addedAt": 1699080355176
+            },
+            {
+                "id": "3vluuz",
+                "title": "Adorn",
+                "artist": "Miguel",
+                "album": "Dream",
+                "url": "https://www.youtube.com/watch?v=rtHhxrgfOcw&ab_channel=MiguelVEVO",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699205675/adorn_miguel_nnaldq.jpg",
+                "addedBy": "Guest",
+                "duration": "3:15",
+                "addedAt": 1698846166832
+            }
+        ],
+        "likedByUsers": [],
+        "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194571/daily-mix-6-_2_j896jd.jpg",
+        "createdBy": "Songify",
+        "createdAt": 1698765927524
     },
     {
         "name": "R&B",
@@ -49,374 +958,705 @@
         "desc": "",
         "songs": [
             {
-                "id": "j1xcxn",
+                "id": "difn8o",
                 "title": "To Zion",
                 "artist": "Lauryn Hill",
                 "album": " The Miseducation of Lauryn Hill",
                 "url": "https://www.youtube.com/watch?v=1sQjh261rU8&ab_channel=JeNnILoVeSmUsIc",
-                "imgUrl": "./../../public/img/Album_cover3.jpg",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194248/Album_cover3_rmsuaj.jpg",
                 "addedBy": "Guest",
                 "duration": "6:09",
-                "addedAt": 1698492909436
+                "addedAt": 1699071347768
             },
             {
-                "id": "9kyrqt",
+                "id": "t6n3zm",
                 "title": "Work",
                 "artist": "Rihanna",
                 "album": " Anti",
                 "url": "https://www.youtube.com/watch?v=puxjq3p-fU0&ab_channel=Rihanna-Topic",
-                "imgUrl": "./../../public/img/Album_cover1.png",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194247/Album_cover1_ebopdz.png",
                 "addedBy": "Gilad",
                 "duration": "3:39",
-                "addedAt": 1698704214029
+                "addedAt": 1698767738447
             },
             {
-                "id": "urj5ed",
+                "id": "cu8t6g",
                 "title": "Doo Wop",
                 "artist": "Lauryn Hill",
                 "album": " The Miseducation of Lauryn Hill",
                 "url": "https://www.youtube.com/watch?v=T6QKqFPRZSA&ab_channel=laurynhillvevo",
-                "imgUrl": "./../../public/img/Album_cover3.jpg",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194248/Album_cover3_rmsuaj.jpg",
                 "addedBy": "Guest",
                 "duration": "3:56",
-                "addedAt": 1698795758450
+                "addedAt": 1698896514124
             },
             {
-                "id": "7b2kj5",
+                "id": "nw5byc",
                 "title": "Consideration",
                 "artist": "Rihanna",
                 "album": "Anti",
                 "url": "https://www.youtube.com/watch?v=WSSShAOKYfo&ab_channel=Rihanna-Topic",
-                "imgUrl": "./../../public/img/Album_cover1.png",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194247/Album_cover1_ebopdz.png",
                 "addedBy": "Guest",
                 "duration": "2:41",
-                "addedAt": 1698940912618
+                "addedAt": 1698850214637
             }
         ],
         "likedByUsers": [],
-        "imgUrl": "./../../public/img/Channel_ORANGE.jpg",
+        "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699195202/asset_5_eua8e7.jpg",
         "createdBy": "Gilad",
-        "createdAt": 1698450163991
+        "createdAt": 1699108809464
     },
     {
-        "name": "Daily Mix 1",
+        "name": "Rap Caviar",
         "tags": [
-            "Made For You"
+            "Mood",
+            "Rock",
+            "Soul",
+            "Glow"
         ],
         "desc": "",
         "songs": [
             {
-                "id": "aql5y1",
-                "title": "Wash.",
-                "artist": "Bon Iver",
-                "album": "Bon Iver",
-                "url": "https://www.youtube.com/watch?v=KMfL7rVAu0U&ab_channel=BonIver",
-                "imgUrl": "./../../public/img/Album_cover3.jpg",
-                "addedBy": "Spotify",
-                "duration": "4:54",
-                "addedAt": 1698581227273
-            },
-            {
-                "id": "0ibxe2",
-                "title": "Time",
-                "artist": "Pink Floyd",
-                "album": "Dark side of thr moon",
-                "url": "https://www.youtube.com/watch?v=Qr0-7Ds79zo&ab_channel=PinkFloyd",
-                "imgUrl": "./../../public/img/Album_cover4.jpg",
-                "addedBy": "Gilad",
-                "duration": "3:33",
-                "addedAt": 1698473765161
-            },
-            {
-                "id": "j1xcxn",
-                "title": "To Zion",
-                "artist": "Lauryn Hill",
-                "album": " The Miseducation of Lauryn Hill",
-                "url": "https://www.youtube.com/watch?v=1sQjh261rU8&ab_channel=JeNnILoVeSmUsIc",
-                "imgUrl": "./../../public/img/Album_cover3.jpg",
-                "addedBy": "Guest",
-                "duration": "6:09",
-                "addedAt": 1698492909436
-            },
-            {
-                "id": "7b2kj5",
-                "title": "Consideration",
-                "artist": "Rihanna",
-                "album": "Anti",
-                "url": "https://www.youtube.com/watch?v=WSSShAOKYfo&ab_channel=Rihanna-Topic",
-                "imgUrl": "./../../public/img/Album_cover1.png",
-                "addedBy": "Guest",
-                "duration": "2:41",
-                "addedAt": 1698940912618
-            }
-        ],
-        "likedByUsers": [],
-        "imgUrl": "./../../public/img/daily_mix_1.jpg",
-        "createdBy": "Songify",
-        "createdAt": 1698783916643
-    },
-    {
-        "name": "Daily Mix 2",
-        "tags": [
-            "Made For You"
-        ],
-        "desc": "",
-        "songs": [
-            {
-                "id": "0ibxe2",
-                "title": "Time",
-                "artist": "Pink Floyd",
-                "album": "Dark side of thr moon",
-                "url": "https://www.youtube.com/watch?v=Qr0-7Ds79zo&ab_channel=PinkFloyd",
-                "imgUrl": "./../../public/img/Album_cover4.jpg",
-                "addedBy": "Gilad",
-                "duration": "3:33",
-                "addedAt": 1698473765161
-            },
-            {
-                "id": "5bpje3",
-                "title": "Jump",
-                "artist": "Van Halen",
-                "album": "1984",
-                "url": "https://www.youtube.com/watch?v=ggJI9dKBk48&ab_channel=VanHalen-Topic",
-                "imgUrl": "./../../public/img/Album_cover4.jpg",
-                "addedBy": "Gilad",
-                "duration": "3:59",
-                "addedAt": 1698483792832
-            },
-            {
-                "id": "n5119p",
+                "id": "5wuq2s",
                 "title": "Dang!",
                 "artist": "Mac Miller",
                 "album": "The Divine Feminine",
                 "url": "https://www.youtube.com/watch?v=LR3GQfryp9M&ab_channel=MacMiller",
-                "imgUrl": "./../../public/img/Album-cover2.jpg",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699205675/mac_miller_jgyzun.jpg",
                 "addedBy": "Guest",
                 "duration": "4:39",
-                "addedAt": 1699003445510
-            }
-        ],
-        "likedByUsers": [],
-        "imgUrl": "./../../public/img/daily-mix-2.jpeg",
-        "createdBy": "Songify",
-        "createdAt": 1698683741463
-    },
-    {
-        "name": "Daily Mix 3",
-        "tags": [
-            "Made For You"
-        ],
-        "desc": "",
-        "songs": [
-            {
-                "id": "n5119p",
-                "title": "Dang!",
-                "artist": "Mac Miller",
-                "album": "The Divine Feminine",
-                "url": "https://www.youtube.com/watch?v=LR3GQfryp9M&ab_channel=MacMiller",
-                "imgUrl": "./../../public/img/Album-cover2.jpg",
-                "addedBy": "Guest",
-                "duration": "4:39",
-                "addedAt": 1699003445510
+                "addedAt": 1698817405682
             },
             {
-                "id": "7b2kj5",
-                "title": "Consideration",
-                "artist": "Rihanna",
-                "album": "Anti",
-                "url": "https://www.youtube.com/watch?v=WSSShAOKYfo&ab_channel=Rihanna-Topic",
-                "imgUrl": "./../../public/img/Album_cover1.png",
-                "addedBy": "Guest",
-                "duration": "2:41",
-                "addedAt": 1698940912618
-            },
-            {
-                "id": "9kyrqt",
-                "title": "Work",
-                "artist": "Rihanna",
-                "album": " Anti",
-                "url": "https://www.youtube.com/watch?v=puxjq3p-fU0&ab_channel=Rihanna-Topic",
-                "imgUrl": "./../../public/img/Album_cover1.png",
-                "addedBy": "Gilad",
-                "duration": "3:39",
-                "addedAt": 1698704214029
-            },
-            {
-                "id": "ybu67n",
+                "id": "ppg52y",
                 "title": "Juicy",
                 "artist": "B.I.G",
                 "album": "Ready to Die.",
                 "url": "https://www.youtube.com/watch?v=7Y8VPQcPHhY&ab_channel=TheNotoriousB.I.G.-Topic",
-                "imgUrl": "./../../public/img/Album-cover2.jpg",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194251/Album-cover2_llwqpw.jpg",
                 "addedBy": "Gilad",
                 "duration": "4:13",
-                "addedAt": 1698497775790
-            }
-        ],
-        "likedByUsers": [],
-        "imgUrl": "./../../public/img/daily_mix_3.jpg",
-        "createdBy": "Songify",
-        "createdAt": 1698812015564
-    },
-    {
-        "name": "Daily Mix 4",
-        "tags": [
-            "Made For You"
-        ],
-        "desc": "",
-        "songs": [
+                "addedAt": 1698934936708
+            },
             {
-                "id": "aql5y1",
+                "id": "6m7ztz",
                 "title": "Wash.",
                 "artist": "Bon Iver",
                 "album": "Bon Iver",
                 "url": "https://www.youtube.com/watch?v=KMfL7rVAu0U&ab_channel=BonIver",
-                "imgUrl": "./../../public/img/Album_cover3.jpg",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699205676/wash_bon_iver_i8fjta.jpg",
                 "addedBy": "Spotify",
                 "duration": "4:54",
-                "addedAt": 1698581227273
+                "addedAt": 1698780770472
             },
             {
-                "id": "0ibxe2",
-                "title": "Time",
-                "artist": "Pink Floyd",
-                "album": "Dark side of thr moon",
-                "url": "https://www.youtube.com/watch?v=Qr0-7Ds79zo&ab_channel=PinkFloyd",
-                "imgUrl": "./../../public/img/Album_cover4.jpg",
+                "id": "v6xgb7",
+                "title": "Hey Ya!",
+                "artist": "Outkast",
+                "album": "Speakerboxxx",
+                "url": "https://www.youtube.com/watch?v=JzqYDWBkX_Q&ab_channel=AOK",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194272/Outkast_in3z3w.jpg",
                 "addedBy": "Gilad",
-                "duration": "3:33",
-                "addedAt": 1698473765161
+                "duration": "3:52",
+                "addedAt": 1698742145148
             },
             {
-                "id": "j1xcxn",
-                "title": "To Zion",
-                "artist": "Lauryn Hill",
-                "album": " The Miseducation of Lauryn Hill",
-                "url": "https://www.youtube.com/watch?v=1sQjh261rU8&ab_channel=JeNnILoVeSmUsIc",
-                "imgUrl": "./../../public/img/Album_cover3.jpg",
+                "id": "7ui6ge",
+                "title": "Roses",
+                "artist": "Outkast",
+                "album": "Speakerboxxx",
+                "url": "https://www.youtube.com/watch?v=sZ1vT0aPcYE&ab_channel=Outkast-Topic",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194272/Outkast_in3z3w.jpg",
                 "addedBy": "Guest",
-                "duration": "6:09",
-                "addedAt": 1698492909436
+                "duration": "6:10",
+                "addedAt": 1699080355176
             },
             {
-                "id": "7b2kj5",
-                "title": "Consideration",
-                "artist": "Rihanna",
-                "album": "Anti",
-                "url": "https://www.youtube.com/watch?v=WSSShAOKYfo&ab_channel=Rihanna-Topic",
-                "imgUrl": "./../../public/img/Album_cover1.png",
+                "id": "3vluuz",
+                "title": "Adorn",
+                "artist": "Miguel",
+                "album": "Dream",
+                "url": "https://www.youtube.com/watch?v=rtHhxrgfOcw&ab_channel=MiguelVEVO",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699205675/adorn_miguel_nnaldq.jpg",
                 "addedBy": "Guest",
-                "duration": "2:41",
-                "addedAt": 1698940912618
+                "duration": "3:15",
+                "addedAt": 1698846166832
+            },
+            {
+                "id": "500e5z",
+                "title": "Jump",
+                "artist": "Van Halen",
+                "album": "1984",
+                "url": "https://www.youtube.com/watch?v=ggJI9dKBk48&ab_channel=VanHalen-Topic",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699205676/jump_van_halen_wectxk.jpg",
+                "addedBy": "Gilad",
+                "duration": "3:59",
+                "addedAt": 1698864658598
             }
         ],
         "likedByUsers": [],
-        "imgUrl": "./../../public/img/daily-mix-4.jpeg",
+        "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194235/RapCaviar_cnw5eb.jpg",
         "createdBy": "Songify",
-        "createdAt": 1698976292016
+        "createdAt": 1698728878518
     },
     {
-        "name": "Daily Mix 5",
+        "name": "Soul Mix",
         "tags": [
-            "Made For You"
+            "Mood",
+            "Trending",
+            "Rock",
+            "R&B",
+            "Glow"
         ],
         "desc": "",
         "songs": [
             {
-                "id": "urj5ed",
+                "id": "cu8t6g",
                 "title": "Doo Wop",
                 "artist": "Lauryn Hill",
                 "album": " The Miseducation of Lauryn Hill",
                 "url": "https://www.youtube.com/watch?v=T6QKqFPRZSA&ab_channel=laurynhillvevo",
-                "imgUrl": "./../../public/img/Album_cover3.jpg",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194248/Album_cover3_rmsuaj.jpg",
                 "addedBy": "Guest",
                 "duration": "3:56",
-                "addedAt": 1698795758450
+                "addedAt": 1698896514124
             },
             {
-                "id": "7b2kj5",
+                "id": "nw5byc",
                 "title": "Consideration",
                 "artist": "Rihanna",
                 "album": "Anti",
                 "url": "https://www.youtube.com/watch?v=WSSShAOKYfo&ab_channel=Rihanna-Topic",
-                "imgUrl": "./../../public/img/Album_cover1.png",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194247/Album_cover1_ebopdz.png",
                 "addedBy": "Guest",
                 "duration": "2:41",
-                "addedAt": 1698940912618
+                "addedAt": 1698850214637
             },
             {
-                "id": "aql5y1",
+                "id": "6m7ztz",
                 "title": "Wash.",
                 "artist": "Bon Iver",
                 "album": "Bon Iver",
                 "url": "https://www.youtube.com/watch?v=KMfL7rVAu0U&ab_channel=BonIver",
-                "imgUrl": "./../../public/img/Album_cover3.jpg",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699205676/wash_bon_iver_i8fjta.jpg",
                 "addedBy": "Spotify",
                 "duration": "4:54",
-                "addedAt": 1698581227273
+                "addedAt": 1698780770472
             }
         ],
         "likedByUsers": [],
-        "imgUrl": "./../../public/img/daily-mix-5.jpeg",
+        "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699195203/asset_36_ulmkuq.jpg",
         "createdBy": "Songify",
-        "createdAt": 1698793817232
+        "createdAt": 1698886756816
     },
     {
-        "name": "Daily Mix 6",
+        "name": "Rock Legends",
         "tags": [
-            "Made For You"
+            "vibe",
+            "Latin",
+            "Alternative",
+            "Glow"
         ],
         "desc": "",
         "songs": [
             {
-                "id": "aql5y1",
-                "title": "Wash.",
-                "artist": "Bon Iver",
-                "album": "Bon Iver",
-                "url": "https://www.youtube.com/watch?v=KMfL7rVAu0U&ab_channel=BonIver",
-                "imgUrl": "./../../public/img/Album_cover3.jpg",
-                "addedBy": "Spotify",
-                "duration": "4:54",
-                "addedAt": 1698581227273
+                "id": "500e5z",
+                "title": "Jump",
+                "artist": "Van Halen",
+                "album": "1984",
+                "url": "https://www.youtube.com/watch?v=ggJI9dKBk48&ab_channel=VanHalen-Topic",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699205676/jump_van_halen_wectxk.jpg",
+                "addedBy": "Gilad",
+                "duration": "3:59",
+                "addedAt": 1698864658598
             },
             {
-                "id": "0ibxe2",
+                "id": "tcmm9s",
                 "title": "Time",
                 "artist": "Pink Floyd",
                 "album": "Dark side of thr moon",
                 "url": "https://www.youtube.com/watch?v=Qr0-7Ds79zo&ab_channel=PinkFloyd",
-                "imgUrl": "./../../public/img/Album_cover4.jpg",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194250/Album_cover4_tblibx.jpg",
                 "addedBy": "Gilad",
                 "duration": "3:33",
-                "addedAt": 1698473765161
+                "addedAt": 1698675007106
             },
             {
-                "id": "j1xcxn",
-                "title": "To Zion",
-                "artist": "Lauryn Hill",
-                "album": " The Miseducation of Lauryn Hill",
-                "url": "https://www.youtube.com/watch?v=1sQjh261rU8&ab_channel=JeNnILoVeSmUsIc",
-                "imgUrl": "./../../public/img/Album_cover3.jpg",
-                "addedBy": "Guest",
-                "duration": "6:09",
-                "addedAt": 1698492909436
+                "id": "6m7ztz",
+                "title": "Wash.",
+                "artist": "Bon Iver",
+                "album": "Bon Iver",
+                "url": "https://www.youtube.com/watch?v=KMfL7rVAu0U&ab_channel=BonIver",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699205676/wash_bon_iver_i8fjta.jpg",
+                "addedBy": "Spotify",
+                "duration": "4:54",
+                "addedAt": 1698780770472
+            }
+        ],
+        "likedByUsers": [],
+        "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699195202/asset_3_aq0u4v.jpg",
+        "createdBy": "Gilad",
+        "createdAt": 1698682443593
+    },
+    {
+        "name": "2010s Mix",
+        "tags": [
+            "Mood",
+            "Pop",
+            "Hip-hop"
+        ],
+        "desc": "",
+        "songs": [
+            {
+                "id": "t6n3zm",
+                "title": "Work",
+                "artist": "Rihanna",
+                "album": " Anti",
+                "url": "https://www.youtube.com/watch?v=puxjq3p-fU0&ab_channel=Rihanna-Topic",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194247/Album_cover1_ebopdz.png",
+                "addedBy": "Gilad",
+                "duration": "3:39",
+                "addedAt": 1698767738447
             },
             {
-                "id": "7b2kj5",
+                "id": "6m7ztz",
+                "title": "Wash.",
+                "artist": "Bon Iver",
+                "album": "Bon Iver",
+                "url": "https://www.youtube.com/watch?v=KMfL7rVAu0U&ab_channel=BonIver",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699205676/wash_bon_iver_i8fjta.jpg",
+                "addedBy": "Spotify",
+                "duration": "4:54",
+                "addedAt": 1698780770472
+            },
+            {
+                "id": "nw5byc",
                 "title": "Consideration",
                 "artist": "Rihanna",
                 "album": "Anti",
                 "url": "https://www.youtube.com/watch?v=WSSShAOKYfo&ab_channel=Rihanna-Topic",
-                "imgUrl": "./../../public/img/Album_cover1.png",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194247/Album_cover1_ebopdz.png",
                 "addedBy": "Guest",
                 "duration": "2:41",
-                "addedAt": 1698940912618
+                "addedAt": 1698850214637
+            },
+            {
+                "id": "5wuq2s",
+                "title": "Dang!",
+                "artist": "Mac Miller",
+                "album": "The Divine Feminine",
+                "url": "https://www.youtube.com/watch?v=LR3GQfryp9M&ab_channel=MacMiller",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699205675/mac_miller_jgyzun.jpg",
+                "addedBy": "Guest",
+                "duration": "4:39",
+                "addedAt": 1698817405682
             }
         ],
         "likedByUsers": [],
-        "imgUrl": "./../../public/img/daily-mix-6.jpeg",
+        "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194236/Rihanna_Loud_ewyyod.pngg",
         "createdBy": "Songify",
-        "createdAt": 1698523837394
+        "createdAt": 1699020015465
+    },
+    {
+        "name": "Soft Pop Hits",
+        "tags": [
+            "vibe",
+            "Trending",
+            "Rock",
+            "Divas"
+        ],
+        "desc": "",
+        "songs": [
+            {
+                "id": "ppg52y",
+                "title": "Juicy",
+                "artist": "B.I.G",
+                "album": "Ready to Die.",
+                "url": "https://www.youtube.com/watch?v=7Y8VPQcPHhY&ab_channel=TheNotoriousB.I.G.-Topic",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194251/Album-cover2_llwqpw.jpg",
+                "addedBy": "Gilad",
+                "duration": "4:13",
+                "addedAt": 1698934936708
+            },
+            {
+                "id": "3vluuz",
+                "title": "Adorn",
+                "artist": "Miguel",
+                "album": "Dream",
+                "url": "https://www.youtube.com/watch?v=rtHhxrgfOcw&ab_channel=MiguelVEVO",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699205675/adorn_miguel_nnaldq.jpg",
+                "addedBy": "Guest",
+                "duration": "3:15",
+                "addedAt": 1698846166832
+            },
+            {
+                "id": "5wuq2s",
+                "title": "Dang!",
+                "artist": "Mac Miller",
+                "album": "The Divine Feminine",
+                "url": "https://www.youtube.com/watch?v=LR3GQfryp9M&ab_channel=MacMiller",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699205675/mac_miller_jgyzun.jpg",
+                "addedBy": "Guest",
+                "duration": "4:39",
+                "addedAt": 1698817405682
+            },
+            {
+                "id": "7ui6ge",
+                "title": "Roses",
+                "artist": "Outkast",
+                "album": "Speakerboxxx",
+                "url": "https://www.youtube.com/watch?v=sZ1vT0aPcYE&ab_channel=Outkast-Topic",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194272/Outkast_in3z3w.jpg",
+                "addedBy": "Guest",
+                "duration": "6:10",
+                "addedAt": 1699080355176
+            },
+            {
+                "id": "t6n3zm",
+                "title": "Work",
+                "artist": "Rihanna",
+                "album": " Anti",
+                "url": "https://www.youtube.com/watch?v=puxjq3p-fU0&ab_channel=Rihanna-Topic",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194247/Album_cover1_ebopdz.png",
+                "addedBy": "Gilad",
+                "duration": "3:39",
+                "addedAt": 1698767738447
+            }
+        ],
+        "likedByUsers": [],
+        "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699195202/asset_6_lqp40j.jpg",
+        "createdBy": "Gilad",
+        "createdAt": 1699194334883
+    },
+    {
+        "name": "Outkast Mix",
+        "tags": [
+            "Mood",
+            "Rock",
+            "Hip-hop",
+            "R&B"
+        ],
+        "desc": "",
+        "songs": [
+            {
+                "id": "v6xgb7",
+                "title": "Hey Ya!",
+                "artist": "Outkast",
+                "album": "Speakerboxxx",
+                "url": "https://www.youtube.com/watch?v=JzqYDWBkX_Q&ab_channel=AOK",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194272/Outkast_in3z3w.jpg",
+                "addedBy": "Gilad",
+                "duration": "3:52",
+                "addedAt": 1698742145148
+            },
+            {
+                "id": "ppg52y",
+                "title": "Juicy",
+                "artist": "B.I.G",
+                "album": "Ready to Die.",
+                "url": "https://www.youtube.com/watch?v=7Y8VPQcPHhY&ab_channel=TheNotoriousB.I.G.-Topic",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194251/Album-cover2_llwqpw.jpg",
+                "addedBy": "Gilad",
+                "duration": "4:13",
+                "addedAt": 1698934936708
+            },
+            {
+                "id": "7ui6ge",
+                "title": "Roses",
+                "artist": "Outkast",
+                "album": "Speakerboxxx",
+                "url": "https://www.youtube.com/watch?v=sZ1vT0aPcYE&ab_channel=Outkast-Topic",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194272/Outkast_in3z3w.jpg",
+                "addedBy": "Guest",
+                "duration": "6:10",
+                "addedAt": 1699080355176
+            },
+            {
+                "id": "5wuq2s",
+                "title": "Dang!",
+                "artist": "Mac Miller",
+                "album": "The Divine Feminine",
+                "url": "https://www.youtube.com/watch?v=LR3GQfryp9M&ab_channel=MacMiller",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699205675/mac_miller_jgyzun.jpg",
+                "addedBy": "Guest",
+                "duration": "4:39",
+                "addedAt": 1698817405682
+            }
+        ],
+        "likedByUsers": [],
+        "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194272/Outkast_in3z3w.jpg",
+        "createdBy": "Songify",
+        "createdAt": 1698945421905
+    },
+    {
+        "name": "Party Hits",
+        "tags": [
+            "vibe",
+            "Pop",
+            "Latin"
+        ],
+        "desc": "",
+        "songs": [
+            {
+                "id": "t6n3zm",
+                "title": "Work",
+                "artist": "Rihanna",
+                "album": " Anti",
+                "url": "https://www.youtube.com/watch?v=puxjq3p-fU0&ab_channel=Rihanna-Topic",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194247/Album_cover1_ebopdz.png",
+                "addedBy": "Gilad",
+                "duration": "3:39",
+                "addedAt": 1698767738447
+            },
+            {
+                "id": "5wuq2s",
+                "title": "Dang!",
+                "artist": "Mac Miller",
+                "album": "The Divine Feminine",
+                "url": "https://www.youtube.com/watch?v=LR3GQfryp9M&ab_channel=MacMiller",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699205675/mac_miller_jgyzun.jpg",
+                "addedBy": "Guest",
+                "duration": "4:39",
+                "addedAt": 1698817405682
+            },
+            {
+                "id": "v6xgb7",
+                "title": "Hey Ya!",
+                "artist": "Outkast",
+                "album": "Speakerboxxx",
+                "url": "https://www.youtube.com/watch?v=JzqYDWBkX_Q&ab_channel=AOK",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194272/Outkast_in3z3w.jpg",
+                "addedBy": "Gilad",
+                "duration": "3:52",
+                "addedAt": 1698742145148
+            },
+            {
+                "id": "nw5byc",
+                "title": "Consideration",
+                "artist": "Rihanna",
+                "album": "Anti",
+                "url": "https://www.youtube.com/watch?v=WSSShAOKYfo&ab_channel=Rihanna-Topic",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194247/Album_cover1_ebopdz.png",
+                "addedBy": "Guest",
+                "duration": "2:41",
+                "addedAt": 1698850214637
+            }
+        ],
+        "likedByUsers": [],
+        "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194229/party_ht7t5h.jpg",
+        "createdBy": "Songify",
+        "createdAt": 1699239866244
+    },
+    {
+        "name": "On Repeat",
+        "tags": [
+            "vibe",
+            "Rock",
+            "R&B",
+            "Latin",
+            "Alternative"
+        ],
+        "desc": "",
+        "songs": [
+            {
+                "id": "7ui6ge",
+                "title": "Roses",
+                "artist": "Outkast",
+                "album": "Speakerboxxx",
+                "url": "https://www.youtube.com/watch?v=sZ1vT0aPcYE&ab_channel=Outkast-Topic",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194272/Outkast_in3z3w.jpg",
+                "addedBy": "Guest",
+                "duration": "6:10",
+                "addedAt": 1699080355176
+            },
+            {
+                "id": "t6n3zm",
+                "title": "Work",
+                "artist": "Rihanna",
+                "album": " Anti",
+                "url": "https://www.youtube.com/watch?v=puxjq3p-fU0&ab_channel=Rihanna-Topic",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194247/Album_cover1_ebopdz.png",
+                "addedBy": "Gilad",
+                "duration": "3:39",
+                "addedAt": 1698767738447
+            },
+            {
+                "id": "cu8t6g",
+                "title": "Doo Wop",
+                "artist": "Lauryn Hill",
+                "album": " The Miseducation of Lauryn Hill",
+                "url": "https://www.youtube.com/watch?v=T6QKqFPRZSA&ab_channel=laurynhillvevo",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194248/Album_cover3_rmsuaj.jpg",
+                "addedBy": "Guest",
+                "duration": "3:56",
+                "addedAt": 1698896514124
+            }
+        ],
+        "likedByUsers": [],
+        "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194228/On_Repeat_lvgcoz.jpg",
+        "createdBy": "Gilad",
+        "createdAt": 1698702380382
+    },
+    {
+        "name": "Chill Hits",
+        "tags": [
+            "Mood",
+            "Pop",
+            "Indie",
+            "Glow",
+            "Divas"
+        ],
+        "desc": "",
+        "songs": [
+            {
+                "id": "7ui6ge",
+                "title": "Roses",
+                "artist": "Outkast",
+                "album": "Speakerboxxx",
+                "url": "https://www.youtube.com/watch?v=sZ1vT0aPcYE&ab_channel=Outkast-Topic",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194272/Outkast_in3z3w.jpg",
+                "addedBy": "Guest",
+                "duration": "6:10",
+                "addedAt": 1699080355176
+            },
+            {
+                "id": "500e5z",
+                "title": "Jump",
+                "artist": "Van Halen",
+                "album": "1984",
+                "url": "https://www.youtube.com/watch?v=ggJI9dKBk48&ab_channel=VanHalen-Topic",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699205676/jump_van_halen_wectxk.jpg",
+                "addedBy": "Gilad",
+                "duration": "3:59",
+                "addedAt": 1698864658598
+            },
+            {
+                "id": "tcmm9s",
+                "title": "Time",
+                "artist": "Pink Floyd",
+                "album": "Dark side of thr moon",
+                "url": "https://www.youtube.com/watch?v=Qr0-7Ds79zo&ab_channel=PinkFloyd",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194250/Album_cover4_tblibx.jpg",
+                "addedBy": "Gilad",
+                "duration": "3:33",
+                "addedAt": 1698675007106
+            },
+            {
+                "id": "5wuq2s",
+                "title": "Dang!",
+                "artist": "Mac Miller",
+                "album": "The Divine Feminine",
+                "url": "https://www.youtube.com/watch?v=LR3GQfryp9M&ab_channel=MacMiller",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699205675/mac_miller_jgyzun.jpg",
+                "addedBy": "Guest",
+                "duration": "4:39",
+                "addedAt": 1698817405682
+            }
+        ],
+        "likedByUsers": [],
+        "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194243/vibe_uxko8k.jpg",
+        "createdBy": "Songify",
+        "createdAt": 1699000813256
+    },
+    {
+        "name": "Songs To Scream In The Car",
+        "tags": [
+            "vibe",
+            "Trending",
+            "Chill",
+            "Indie"
+        ],
+        "desc": "",
+        "songs": [
+            {
+                "id": "t6n3zm",
+                "title": "Work",
+                "artist": "Rihanna",
+                "album": " Anti",
+                "url": "https://www.youtube.com/watch?v=puxjq3p-fU0&ab_channel=Rihanna-Topic",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194247/Album_cover1_ebopdz.png",
+                "addedBy": "Gilad",
+                "duration": "3:39",
+                "addedAt": 1698767738447
+            },
+            {
+                "id": "5wuq2s",
+                "title": "Dang!",
+                "artist": "Mac Miller",
+                "album": "The Divine Feminine",
+                "url": "https://www.youtube.com/watch?v=LR3GQfryp9M&ab_channel=MacMiller",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699205675/mac_miller_jgyzun.jpg",
+                "addedBy": "Guest",
+                "duration": "4:39",
+                "addedAt": 1698817405682
+            },
+            {
+                "id": "nw5byc",
+                "title": "Consideration",
+                "artist": "Rihanna",
+                "album": "Anti",
+                "url": "https://www.youtube.com/watch?v=WSSShAOKYfo&ab_channel=Rihanna-Topic",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194247/Album_cover1_ebopdz.png",
+                "addedBy": "Guest",
+                "duration": "2:41",
+                "addedAt": 1698850214637
+            }
+        ],
+        "likedByUsers": [],
+        "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699195205/asset_42_sjtxeg.jpg",
+        "createdBy": "Songify",
+        "createdAt": 1698664993147
+    },
+    {
+        "name": "ANTI",
+        "tags": [
+            "vibe",
+            "Trending",
+            "R&B",
+            "Soul",
+            "Divas"
+        ],
+        "desc": "",
+        "songs": [
+            {
+                "id": "nw5byc",
+                "title": "Consideration",
+                "artist": "Rihanna",
+                "album": "Anti",
+                "url": "https://www.youtube.com/watch?v=WSSShAOKYfo&ab_channel=Rihanna-Topic",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194247/Album_cover1_ebopdz.png",
+                "addedBy": "Guest",
+                "duration": "2:41",
+                "addedAt": 1698850214637
+            },
+            {
+                "id": "t6n3zm",
+                "title": "Work",
+                "artist": "Rihanna",
+                "album": " Anti",
+                "url": "https://www.youtube.com/watch?v=puxjq3p-fU0&ab_channel=Rihanna-Topic",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194247/Album_cover1_ebopdz.png",
+                "addedBy": "Gilad",
+                "duration": "3:39",
+                "addedAt": 1698767738447
+            },
+            {
+                "id": "n03jw6",
+                "title": "Love On The Brain",
+                "artist": "Rihanna",
+                "album": " Anti",
+                "url": "https://www.youtube.com/watch?v=Ni7rKJpQReU&list=PLVP1nukhQ7IkYT9Juzxp5rHlLLPiXzMw8&index=11",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194247/Album_cover1_ebopdz.png",
+                "addedBy": "Gilad",
+                "duration": "3:39",
+                "addedAt": 1699197867215
+            }
+        ],
+        "likedByUsers": [],
+        "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194247/Album_cover1_ebopdz.png",
+        "createdBy": "Rihanna",
+        "createdAt": 1699015720801
     },
     {
         "name": "Hip hop",
@@ -432,402 +1672,54 @@
         "desc": "",
         "songs": [
             {
-                "id": "ybu67n",
+                "id": "ppg52y",
                 "title": "Juicy",
                 "artist": "B.I.G",
                 "album": "Ready to Die.",
                 "url": "https://www.youtube.com/watch?v=7Y8VPQcPHhY&ab_channel=TheNotoriousB.I.G.-Topic",
-                "imgUrl": "./../../public/img/Album-cover2.jpg",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194251/Album-cover2_llwqpw.jpg",
                 "addedBy": "Gilad",
                 "duration": "4:13",
-                "addedAt": 1698497775790
+                "addedAt": 1698934936708
             },
             {
-                "id": "n5119p",
+                "id": "5wuq2s",
                 "title": "Dang!",
                 "artist": "Mac Miller",
                 "album": "The Divine Feminine",
                 "url": "https://www.youtube.com/watch?v=LR3GQfryp9M&ab_channel=MacMiller",
-                "imgUrl": "./../../public/img/Album-cover2.jpg",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699205675/mac_miller_jgyzun.jpg",
                 "addedBy": "Guest",
                 "duration": "4:39",
-                "addedAt": 1699003445510
+                "addedAt": 1698817405682
             },
             {
-                "id": "qmdi92",
+                "id": "7ui6ge",
                 "title": "Roses",
                 "artist": "Outkast",
                 "album": "Speakerboxxx",
                 "url": "https://www.youtube.com/watch?v=sZ1vT0aPcYE&ab_channel=Outkast-Topic",
-                "imgUrl": "./../../public/img/Outkast.jpg",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194272/Outkast_in3z3w.jpg",
                 "addedBy": "Guest",
                 "duration": "6:10",
-                "addedAt": 1698586238082
+                "addedAt": 1699080355176
             },
             {
-                "id": "9kyrqt",
+                "id": "t6n3zm",
                 "title": "Work",
                 "artist": "Rihanna",
                 "album": " Anti",
                 "url": "https://www.youtube.com/watch?v=puxjq3p-fU0&ab_channel=Rihanna-Topic",
-                "imgUrl": "./../../public/img/Album_cover1.png",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194247/Album_cover1_ebopdz.png",
                 "addedBy": "Gilad",
                 "duration": "3:39",
-                "addedAt": 1698704214029
+                "addedAt": 1698767738447
             }
         ],
         "likedByUsers": [],
-        "imgUrl": "./../../public/img/Album-cover2.jpg",
+        "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699195203/asset_38_nsjm8m.jpg",
         "createdBy": "Gilad",
-        "createdAt": 1698583462785
-    },
-    {
-        "name": "Soul Mix",
-        "tags": [
-            "Mood",
-            "Trending",
-            "Rock",
-            "R&B",
-            "Glow"
-        ],
-        "desc": "",
-        "songs": [
-            {
-                "id": "urj5ed",
-                "title": "Doo Wop",
-                "artist": "Lauryn Hill",
-                "album": " The Miseducation of Lauryn Hill",
-                "url": "https://www.youtube.com/watch?v=T6QKqFPRZSA&ab_channel=laurynhillvevo",
-                "imgUrl": "./../../public/img/Album_cover3.jpg",
-                "addedBy": "Guest",
-                "duration": "3:56",
-                "addedAt": 1698795758450
-            },
-            {
-                "id": "7b2kj5",
-                "title": "Consideration",
-                "artist": "Rihanna",
-                "album": "Anti",
-                "url": "https://www.youtube.com/watch?v=WSSShAOKYfo&ab_channel=Rihanna-Topic",
-                "imgUrl": "./../../public/img/Album_cover1.png",
-                "addedBy": "Guest",
-                "duration": "2:41",
-                "addedAt": 1698940912618
-            },
-            {
-                "id": "aql5y1",
-                "title": "Wash.",
-                "artist": "Bon Iver",
-                "album": "Bon Iver",
-                "url": "https://www.youtube.com/watch?v=KMfL7rVAu0U&ab_channel=BonIver",
-                "imgUrl": "./../../public/img/Album_cover3.jpg",
-                "addedBy": "Spotify",
-                "duration": "4:54",
-                "addedAt": 1698581227273
-            }
-        ],
-        "likedByUsers": [],
-        "imgUrl": "./../../public/img/Album_cover3.jpg",
-        "createdBy": "Songify",
-        "createdAt": 1698735542826
-    },
-    {
-        "name": "Rock",
-        "tags": [
-            "vibe",
-            "Latin",
-            "Alternative",
-            "Glow"
-        ],
-        "desc": "",
-        "songs": [
-            {
-                "id": "5bpje3",
-                "title": "Jump",
-                "artist": "Van Halen",
-                "album": "1984",
-                "url": "https://www.youtube.com/watch?v=ggJI9dKBk48&ab_channel=VanHalen-Topic",
-                "imgUrl": "./../../public/img/Album_cover4.jpg",
-                "addedBy": "Gilad",
-                "duration": "3:59",
-                "addedAt": 1698483792832
-            },
-            {
-                "id": "0ibxe2",
-                "title": "Time",
-                "artist": "Pink Floyd",
-                "album": "Dark side of thr moon",
-                "url": "https://www.youtube.com/watch?v=Qr0-7Ds79zo&ab_channel=PinkFloyd",
-                "imgUrl": "./../../public/img/Album_cover4.jpg",
-                "addedBy": "Gilad",
-                "duration": "3:33",
-                "addedAt": 1698473765161
-            },
-            {
-                "id": "aql5y1",
-                "title": "Wash.",
-                "artist": "Bon Iver",
-                "album": "Bon Iver",
-                "url": "https://www.youtube.com/watch?v=KMfL7rVAu0U&ab_channel=BonIver",
-                "imgUrl": "./../../public/img/Album_cover3.jpg",
-                "addedBy": "Spotify",
-                "duration": "4:54",
-                "addedAt": 1698581227273
-            }
-        ],
-        "likedByUsers": [],
-        "imgUrl": "./../../public/img/Album_cover4.jpg",
-        "createdBy": "Gilad",
-        "createdAt": 1698783837548
-    },
-    {
-        "name": "2010s Mix",
-        "tags": [
-            "Mood",
-            "Pop",
-            "Hip-hop"
-        ],
-        "desc": "",
-        "songs": [
-            {
-                "id": "9kyrqt",
-                "title": "Work",
-                "artist": "Rihanna",
-                "album": " Anti",
-                "url": "https://www.youtube.com/watch?v=puxjq3p-fU0&ab_channel=Rihanna-Topic",
-                "imgUrl": "./../../public/img/Album_cover1.png",
-                "addedBy": "Gilad",
-                "duration": "3:39",
-                "addedAt": 1698704214029
-            },
-            {
-                "id": "aql5y1",
-                "title": "Wash.",
-                "artist": "Bon Iver",
-                "album": "Bon Iver",
-                "url": "https://www.youtube.com/watch?v=KMfL7rVAu0U&ab_channel=BonIver",
-                "imgUrl": "./../../public/img/Album_cover3.jpg",
-                "addedBy": "Spotify",
-                "duration": "4:54",
-                "addedAt": 1698581227273
-            },
-            {
-                "id": "7b2kj5",
-                "title": "Consideration",
-                "artist": "Rihanna",
-                "album": "Anti",
-                "url": "https://www.youtube.com/watch?v=WSSShAOKYfo&ab_channel=Rihanna-Topic",
-                "imgUrl": "./../../public/img/Album_cover1.png",
-                "addedBy": "Guest",
-                "duration": "2:41",
-                "addedAt": 1698940912618
-            },
-            {
-                "id": "n5119p",
-                "title": "Dang!",
-                "artist": "Mac Miller",
-                "album": "The Divine Feminine",
-                "url": "https://www.youtube.com/watch?v=LR3GQfryp9M&ab_channel=MacMiller",
-                "imgUrl": "./../../public/img/Album-cover2.jpg",
-                "addedBy": "Guest",
-                "duration": "4:39",
-                "addedAt": 1699003445510
-            }
-        ],
-        "likedByUsers": [],
-        "imgUrl": "./../../public/img/Rihanna_Loud.png",
-        "createdBy": "Songify",
-        "createdAt": 1698529148740
-    },
-    {
-        "name": "Chill Mix",
-        "tags": [
-            "vibe",
-            "Trending",
-            "Rock",
-            "Divas"
-        ],
-        "desc": "",
-        "songs": [
-            {
-                "id": "ybu67n",
-                "title": "Juicy",
-                "artist": "B.I.G",
-                "album": "Ready to Die.",
-                "url": "https://www.youtube.com/watch?v=7Y8VPQcPHhY&ab_channel=TheNotoriousB.I.G.-Topic",
-                "imgUrl": "./../../public/img/Album-cover2.jpg",
-                "addedBy": "Gilad",
-                "duration": "4:13",
-                "addedAt": 1698497775790
-            },
-            {
-                "id": "w41b3w",
-                "title": "Adorn",
-                "artist": "Miguel",
-                "album": "Dream",
-                "url": "https://www.youtube.com/watch?v=rtHhxrgfOcw&ab_channel=MiguelVEVO",
-                "imgUrl": "./../../public/img/Album_cover4.jpg",
-                "addedBy": "Guest",
-                "duration": "3:15",
-                "addedAt": 1698793991768
-            },
-            {
-                "id": "n5119p",
-                "title": "Dang!",
-                "artist": "Mac Miller",
-                "album": "The Divine Feminine",
-                "url": "https://www.youtube.com/watch?v=LR3GQfryp9M&ab_channel=MacMiller",
-                "imgUrl": "./../../public/img/Album-cover2.jpg",
-                "addedBy": "Guest",
-                "duration": "4:39",
-                "addedAt": 1699003445510
-            },
-            {
-                "id": "qmdi92",
-                "title": "Roses",
-                "artist": "Outkast",
-                "album": "Speakerboxxx",
-                "url": "https://www.youtube.com/watch?v=sZ1vT0aPcYE&ab_channel=Outkast-Topic",
-                "imgUrl": "./../../public/img/Outkast.jpg",
-                "addedBy": "Guest",
-                "duration": "6:10",
-                "addedAt": 1698586238082
-            },
-            {
-                "id": "9kyrqt",
-                "title": "Work",
-                "artist": "Rihanna",
-                "album": " Anti",
-                "url": "https://www.youtube.com/watch?v=puxjq3p-fU0&ab_channel=Rihanna-Topic",
-                "imgUrl": "./../../public/img/Album_cover1.png",
-                "addedBy": "Gilad",
-                "duration": "3:39",
-                "addedAt": 1698704214029
-            }
-        ],
-        "likedByUsers": [],
-        "imgUrl": "./../../public/img/Album_Chill.jpg",
-        "createdBy": "Gilad",
-        "createdAt": 1698764306128
-    },
-    {
-        "name": "Outkast Mix",
-        "tags": [
-            "Mood",
-            "Rock",
-            "Hip-hop",
-            "R&B"
-        ],
-        "desc": "",
-        "songs": [
-            {
-                "id": "sre605",
-                "title": "Hey Ya!",
-                "artist": "Outkast",
-                "album": "Speakerboxxx",
-                "url": "https://www.youtube.com/watch?v=JzqYDWBkX_Q&ab_channel=AOK",
-                "imgUrl": "./../../public/img/Outkast.jpg",
-                "addedBy": "Gilad",
-                "duration": "3:52",
-                "addedAt": 1698932825923
-            },
-            {
-                "id": "ybu67n",
-                "title": "Juicy",
-                "artist": "B.I.G",
-                "album": "Ready to Die.",
-                "url": "https://www.youtube.com/watch?v=7Y8VPQcPHhY&ab_channel=TheNotoriousB.I.G.-Topic",
-                "imgUrl": "./../../public/img/Album-cover2.jpg",
-                "addedBy": "Gilad",
-                "duration": "4:13",
-                "addedAt": 1698497775790
-            },
-            {
-                "id": "qmdi92",
-                "title": "Roses",
-                "artist": "Outkast",
-                "album": "Speakerboxxx",
-                "url": "https://www.youtube.com/watch?v=sZ1vT0aPcYE&ab_channel=Outkast-Topic",
-                "imgUrl": "./../../public/img/Outkast.jpg",
-                "addedBy": "Guest",
-                "duration": "6:10",
-                "addedAt": 1698586238082
-            },
-            {
-                "id": "n5119p",
-                "title": "Dang!",
-                "artist": "Mac Miller",
-                "album": "The Divine Feminine",
-                "url": "https://www.youtube.com/watch?v=LR3GQfryp9M&ab_channel=MacMiller",
-                "imgUrl": "./../../public/img/Album-cover2.jpg",
-                "addedBy": "Guest",
-                "duration": "4:39",
-                "addedAt": 1699003445510
-            }
-        ],
-        "likedByUsers": [],
-        "imgUrl": "./../../public/img/Outkast.jpg",
-        "createdBy": "Songify",
-        "createdAt": 1698417657417
-    },
-    {
-        "name": "Todays Top Hits",
-        "tags": [
-            "vibe",
-            "Pop",
-            "Latin"
-        ],
-        "desc": "",
-        "songs": [
-            {
-                "id": "9kyrqt",
-                "title": "Work",
-                "artist": "Rihanna",
-                "album": " Anti",
-                "url": "https://www.youtube.com/watch?v=puxjq3p-fU0&ab_channel=Rihanna-Topic",
-                "imgUrl": "./../../public/img/Album_cover1.png",
-                "addedBy": "Gilad",
-                "duration": "3:39",
-                "addedAt": 1698704214029
-            },
-            {
-                "id": "n5119p",
-                "title": "Dang!",
-                "artist": "Mac Miller",
-                "album": "The Divine Feminine",
-                "url": "https://www.youtube.com/watch?v=LR3GQfryp9M&ab_channel=MacMiller",
-                "imgUrl": "./../../public/img/Album-cover2.jpg",
-                "addedBy": "Guest",
-                "duration": "4:39",
-                "addedAt": 1699003445510
-            },
-            {
-                "id": "sre605",
-                "title": "Hey Ya!",
-                "artist": "Outkast",
-                "album": "Speakerboxxx",
-                "url": "https://www.youtube.com/watch?v=JzqYDWBkX_Q&ab_channel=AOK",
-                "imgUrl": "./../../public/img/Outkast.jpg",
-                "addedBy": "Gilad",
-                "duration": "3:52",
-                "addedAt": 1698932825923
-            },
-            {
-                "id": "7b2kj5",
-                "title": "Consideration",
-                "artist": "Rihanna",
-                "album": "Anti",
-                "url": "https://www.youtube.com/watch?v=WSSShAOKYfo&ab_channel=Rihanna-Topic",
-                "imgUrl": "./../../public/img/Album_cover1.png",
-                "addedBy": "Guest",
-                "duration": "2:41",
-                "addedAt": 1698940912618
-            }
-        ],
-        "likedByUsers": [],
-        "imgUrl": "./../../public/img/Album_Pop.png",
-        "createdBy": "Songify",
-        "createdAt": 1698506839342
+        "createdAt": 1699095798169
     },
     {
         "name": "Rock Classics",
@@ -841,273 +1733,97 @@
         "desc": "",
         "songs": [
             {
-                "id": "0ibxe2",
+                "id": "tcmm9s",
                 "title": "Time",
                 "artist": "Pink Floyd",
                 "album": "Dark side of thr moon",
                 "url": "https://www.youtube.com/watch?v=Qr0-7Ds79zo&ab_channel=PinkFloyd",
-                "imgUrl": "./../../public/img/Album_cover4.jpg",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194250/Album_cover4_tblibx.jpg",
                 "addedBy": "Gilad",
                 "duration": "3:33",
-                "addedAt": 1698473765161
+                "addedAt": 1698675007106
             },
             {
-                "id": "5bpje3",
-                "title": "Jump",
-                "artist": "Van Halen",
-                "album": "1984",
-                "url": "https://www.youtube.com/watch?v=ggJI9dKBk48&ab_channel=VanHalen-Topic",
-                "imgUrl": "./../../public/img/Album_cover4.jpg",
-                "addedBy": "Gilad",
-                "duration": "3:59",
-                "addedAt": 1698483792832
-            },
-            {
-                "id": "n5119p",
-                "title": "Dang!",
-                "artist": "Mac Miller",
-                "album": "The Divine Feminine",
-                "url": "https://www.youtube.com/watch?v=LR3GQfryp9M&ab_channel=MacMiller",
-                "imgUrl": "./../../public/img/Album-cover2.jpg",
-                "addedBy": "Guest",
-                "duration": "4:39",
-                "addedAt": 1699003445510
-            }
-        ],
-        "likedByUsers": [],
-        "imgUrl": "./../../public/img/Queen_Album.png",
-        "createdBy": "Songify",
-        "createdAt": 1698554305211
-    },
-    {
-        "name": "On Repeat",
-        "tags": [
-            "vibe",
-            "Rock",
-            "R&B",
-            "Latin",
-            "Alternative"
-        ],
-        "desc": "",
-        "songs": [
-            {
-                "id": "qmdi92",
-                "title": "Roses",
-                "artist": "Outkast",
-                "album": "Speakerboxxx",
-                "url": "https://www.youtube.com/watch?v=sZ1vT0aPcYE&ab_channel=Outkast-Topic",
-                "imgUrl": "./../../public/img/Outkast.jpg",
-                "addedBy": "Guest",
-                "duration": "6:10",
-                "addedAt": 1698586238082
-            },
-            {
-                "id": "9kyrqt",
-                "title": "Work",
-                "artist": "Rihanna",
-                "album": " Anti",
-                "url": "https://www.youtube.com/watch?v=puxjq3p-fU0&ab_channel=Rihanna-Topic",
-                "imgUrl": "./../../public/img/Album_cover1.png",
-                "addedBy": "Gilad",
-                "duration": "3:39",
-                "addedAt": 1698704214029
-            },
-            {
-                "id": "urj5ed",
-                "title": "Doo Wop",
-                "artist": "Lauryn Hill",
-                "album": " The Miseducation of Lauryn Hill",
-                "url": "https://www.youtube.com/watch?v=T6QKqFPRZSA&ab_channel=laurynhillvevo",
-                "imgUrl": "./../../public/img/Album_cover3.jpg",
-                "addedBy": "Guest",
-                "duration": "3:56",
-                "addedAt": 1698795758450
-            }
-        ],
-        "likedByUsers": [],
-        "imgUrl": "./../../public/img/On_Repeat.jpg",
-        "createdBy": "Gilad",
-        "createdAt": 1698930484198
-    },
-    {
-        "name": "Chill Hits",
-        "tags": [
-            "Mood",
-            "Pop",
-            "Indie",
-            "Glow",
-            "Divas"
-        ],
-        "desc": "",
-        "songs": [
-            {
-                "id": "qmdi92",
-                "title": "Roses",
-                "artist": "Outkast",
-                "album": "Speakerboxxx",
-                "url": "https://www.youtube.com/watch?v=sZ1vT0aPcYE&ab_channel=Outkast-Topic",
-                "imgUrl": "./../../public/img/Outkast.jpg",
-                "addedBy": "Guest",
-                "duration": "6:10",
-                "addedAt": 1698586238082
-            },
-            {
-                "id": "5bpje3",
-                "title": "Jump",
-                "artist": "Van Halen",
-                "album": "1984",
-                "url": "https://www.youtube.com/watch?v=ggJI9dKBk48&ab_channel=VanHalen-Topic",
-                "imgUrl": "./../../public/img/Album_cover4.jpg",
-                "addedBy": "Gilad",
-                "duration": "3:59",
-                "addedAt": 1698483792832
-            },
-            {
-                "id": "0ibxe2",
-                "title": "Time",
+                "id": "ehwq2i",
+                "title": "Money",
                 "artist": "Pink Floyd",
                 "album": "Dark side of thr moon",
-                "url": "https://www.youtube.com/watch?v=Qr0-7Ds79zo&ab_channel=PinkFloyd",
-                "imgUrl": "./../../public/img/Album_cover4.jpg",
+                "url": "https://www.youtube.com/watch?v=rwPM01cbQBc&list=PL3PhWT10BW3Urh8ZXXpuU9h526ChwgWKy&index=6",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194250/Album_cover4_tblibx.jpg",
                 "addedBy": "Gilad",
                 "duration": "3:33",
-                "addedAt": 1698473765161
+                "addedAt": 1699100252522
             },
             {
-                "id": "n5119p",
-                "title": "Dang!",
-                "artist": "Mac Miller",
-                "album": "The Divine Feminine",
-                "url": "https://www.youtube.com/watch?v=LR3GQfryp9M&ab_channel=MacMiller",
-                "imgUrl": "./../../public/img/Album-cover2.jpg",
-                "addedBy": "Guest",
-                "duration": "4:39",
-                "addedAt": 1699003445510
-            }
-        ],
-        "likedByUsers": [],
-        "imgUrl": "./../../public/img/Outkast.jpg",
-        "createdBy": "Songify",
-        "createdAt": 1698777146717
-    },
-    {
-        "name": "All Out 2010s",
-        "tags": [
-            "vibe",
-            "Trending",
-            "Chill",
-            "Indie"
-        ],
-        "desc": "",
-        "songs": [
+                "id": "3gqqse",
+                "title": "The Great Gig In The Sky",
+                "artist": "Pink Floyd",
+                "album": "Dark side of thr moon",
+                "url": "https://www.youtube.com/watch?v=mPGv8L3a_sY&list=PL3PhWT10BW3Urh8ZXXpuU9h526ChwgWKy&index=5",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194250/Album_cover4_tblibx.jpg",
+                "addedBy": "Gilad",
+                "duration": "3:33",
+                "addedAt": 1699185189657
+            },
             {
-                "id": "9kyrqt",
-                "title": "Work",
-                "artist": "Rihanna",
-                "album": " Anti",
-                "url": "https://www.youtube.com/watch?v=puxjq3p-fU0&ab_channel=Rihanna-Topic",
-                "imgUrl": "./../../public/img/Album_cover1.png",
+                "id": "8nvok3",
+                "title": "Bohemian Rhapsody",
+                "artist": "Queen",
+                "album": " A Night At the Opera",
+                "url": "https://www.youtube.com/watch?v=kZVH8Q2UqaA&list=PLBnJv6rImVe9XXPLwK2CvysVd_CnrYB81&index=11",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194232/Queen_Album_yt1hwf.png",
                 "addedBy": "Gilad",
                 "duration": "3:39",
-                "addedAt": 1698704214029
+                "addedAt": 1699022934381
             },
             {
-                "id": "n5119p",
-                "title": "Dang!",
-                "artist": "Mac Miller",
-                "album": "The Divine Feminine",
-                "url": "https://www.youtube.com/watch?v=LR3GQfryp9M&ab_channel=MacMiller",
-                "imgUrl": "./../../public/img/Album-cover2.jpg",
+                "id": "i6ff5c",
+                "title": "Love Of My Life",
+                "artist": "Queen",
+                "album": " A Night At the Opera",
+                "url": "https://www.youtube.com/watch?v=2bqm4gRY3mA&list=PLBnJv6rImVe9XXPLwK2CvysVd_CnrYB81&index=9",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699194232/Queen_Album_yt1hwf.png",
+                "addedBy": "Gilad",
+                "duration": "3:39",
+                "addedAt": 1698969423883
+            },
+            {
+                "id": "zqhhck",
+                "title": "Oh! Darling!",
+                "artist": "The Beatles",
+                "album": "Abby Road",
+                "url": "https://www.youtube.com/watch?v=erMgpfiOMSU&list=OLAK5uy_k2JcEE3_maNjnVBKU2s1JjhaZ4rxwgaME&index=5",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699207125/abby_road_wue6vz.jpg",
                 "addedBy": "Guest",
                 "duration": "4:39",
-                "addedAt": 1699003445510
+                "addedAt": 1699126312038
             },
             {
-                "id": "7b2kj5",
-                "title": "Consideration",
-                "artist": "Rihanna",
-                "album": "Anti",
-                "url": "https://www.youtube.com/watch?v=WSSShAOKYfo&ab_channel=Rihanna-Topic",
-                "imgUrl": "./../../public/img/Album_cover1.png",
+                "id": "f3hwb3",
+                "title": "Come Together!",
+                "artist": "The Beatles",
+                "album": "Abby Road",
+                "url": "https://www.youtube.com/watch?v=45cYwDMibGo&list=OLAK5uy_k2JcEE3_maNjnVBKU2s1JjhaZ4rxwgaME&index=2",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699207125/abby_road_wue6vz.jpg",
                 "addedBy": "Guest",
-                "duration": "2:41",
-                "addedAt": 1698940912618
+                "duration": "4:39",
+                "addedAt": 1699084145795
+            },
+            {
+                "id": "ljznfw",
+                "title": "I Want You",
+                "artist": "The Beatles",
+                "album": "Abby Road",
+                "url": "https://www.youtube.com/watch?v=wNL6bd7SpDE&list=OLAK5uy_k2JcEE3_maNjnVBKU2s1JjhaZ4rxwgaME&index=7",
+                "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699207125/abby_road_wue6vz.jpg",
+                "addedBy": "Guest",
+                "duration": "4:39",
+                "addedAt": 1699050571246
             }
         ],
         "likedByUsers": [],
-        "imgUrl": "./../../public/img/Album_Starboy.png",
+        "imgUrl": "https://res.cloudinary.com/dollaguij/image/upload/v1699195202/asset_7_nhlje2.jpg",
         "createdBy": "Songify",
-        "createdAt": 1698745466197
-    },
-    {
-        "name": "Rap Caviar",
-        "tags": [
-            "Mood",
-            "Rock",
-            "Soul",
-            "Glow"
-        ],
-        "desc": "",
-        "songs": [
-            {
-                "id": "w41b3w",
-                "title": "Adorn",
-                "artist": "Miguel",
-                "album": "Dream",
-                "url": "https://www.youtube.com/watch?v=rtHhxrgfOcw&ab_channel=MiguelVEVO",
-                "imgUrl": "./../../public/img/Album_cover4.jpg",
-                "addedBy": "Guest",
-                "duration": "3:15",
-                "addedAt": 1698793991768
-            },
-            {
-                "id": "n5119p",
-                "title": "Dang!",
-                "artist": "Mac Miller",
-                "album": "The Divine Feminine",
-                "url": "https://www.youtube.com/watch?v=LR3GQfryp9M&ab_channel=MacMiller",
-                "imgUrl": "./../../public/img/Album-cover2.jpg",
-                "addedBy": "Guest",
-                "duration": "4:39",
-                "addedAt": 1699003445510
-            },
-            {
-                "id": "ybu67n",
-                "title": "Juicy",
-                "artist": "B.I.G",
-                "album": "Ready to Die.",
-                "url": "https://www.youtube.com/watch?v=7Y8VPQcPHhY&ab_channel=TheNotoriousB.I.G.-Topic",
-                "imgUrl": "./../../public/img/Album-cover2.jpg",
-                "addedBy": "Gilad",
-                "duration": "4:13",
-                "addedAt": 1698497775790
-            },
-            {
-                "id": "qmdi92",
-                "title": "Roses",
-                "artist": "Outkast",
-                "album": "Speakerboxxx",
-                "url": "https://www.youtube.com/watch?v=sZ1vT0aPcYE&ab_channel=Outkast-Topic",
-                "imgUrl": "./../../public/img/Outkast.jpg",
-                "addedBy": "Guest",
-                "duration": "6:10",
-                "addedAt": 1698586238082
-            },
-            {
-                "id": "sre605",
-                "title": "Hey Ya!",
-                "artist": "Outkast",
-                "album": "Speakerboxxx",
-                "url": "https://www.youtube.com/watch?v=JzqYDWBkX_Q&ab_channel=AOK",
-                "imgUrl": "./../../public/img/Outkast.jpg",
-                "addedBy": "Gilad",
-                "duration": "3:52",
-                "addedAt": 1698932825923
-            }
-        ],
-        "likedByUsers": [],
-        "imgUrl": "./../../public/img/RapCaviar.jpg",
-        "createdBy": "Songify",
-        "createdAt": 1698761176154
+        "createdAt": 1698875300855
     }
 ]
