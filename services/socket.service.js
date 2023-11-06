@@ -20,6 +20,9 @@ export function setupSocketAPI(http) {
             const fromUser = data.currUser
             const { userEmail } = data
             const toUser = await userService.getByEmail(userEmail)
+            if (!toUser) {
+                return
+            }
             const toUserId = toUser._id
             logger.info(`New invitation from socket [id: ${socket.id}], emitting to user ${toUser.fullname}`)
             emitToUser({ type: 'invite-request', data: fromUser, userId: toUserId })
@@ -30,12 +33,18 @@ export function setupSocketAPI(http) {
             emitToUser({ type: 'invite-answer', data: answer, userId })
         })
         socket.on('play-station', request => {
-            const userId = request.user._id
+            const userId = request.user?._id
+            if (!userId) {
+                return
+            }
             logger.info(`User played station from socket [id: ${socket.id}], emitting to all except user ${userId}`)
             broadcast({ type: 'station-playing', data: request, userId })
         })
         socket.on('pause-station', request => {
-            const userId = request.user._id
+            const userId = request.user?._id
+            if (!userId) {
+                return
+            }
             logger.info(`User played station from socket [id: ${socket.id}], emitting to all except user ${userId}`)
             broadcast({ type: 'station-paused', data: request, userId })
         })
