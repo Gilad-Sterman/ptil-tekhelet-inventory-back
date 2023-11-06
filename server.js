@@ -52,6 +52,7 @@ setupSocketAPI(server)
 
 
 app.get('/**', (req, res) => {
+    console.log('hi');
     res.sendFile(path.resolve('public/index.html'))
 })
 
