@@ -4,8 +4,6 @@ import { orderService } from "./order.service.js";
 
 export async function getOrders(req, res) {
     try {
-        // const tags = (req.query.tags) ? req.query.tags.split(',') : 'all'
-        // const likedByUsers = req.query.likedByUsers.split(',')
         const filterBy = {
             from: new Date(req.query.from).getTime(),
             to: new Date(req.query.to).getTime(),
@@ -18,6 +16,20 @@ export async function getOrders(req, res) {
         console.log('Getting orders', filterBy)
         const orders = await orderService.query(filterBy)
         res.json(orders)
+    } catch (err) {
+        logger.error('Failed to get orders', err)
+        console.log('Failed to get orders', err)
+        res.status(500).send({ err: 'Failed to get orders' })
+    }
+}
+
+export async function getproductsByType(req, res) {
+    try {
+        const type = req.params.type
+        logger.debug(`Getting ${type}`)
+        console.log(`Getting ${type}`)
+        const products = await orderService.getByType(type)
+        res.json(products)
     } catch (err) {
         logger.error('Failed to get orders', err)
         console.log('Failed to get orders', err)
@@ -67,6 +79,23 @@ export async function updateInventoryBySKU(req, res) {
     } catch (err) {
         logger.error('Failed to update inventory', err)
         res.status(500).send({ err: 'Failed to update inventory' })
+    }
+}
+
+export async function addNewProduct(req, res) {
+    try {
+        const { Cost, DescriptionEng, DescriptionHeb, Inventory, Price, SKU, USDPrice } = req.body
+        const product = await orderService.getBySKU(SKU)
+        console.log('product:', product);
+        if (product) {
+            res.json({ msg: 'product SKU already taken', product })
+            return
+        }
+        const newProduct = await orderService.addNewProduct(Cost, DescriptionEng, DescriptionHeb, Inventory, Price, SKU, USDPrice)
+        res.json(newProduct)
+    } catch (err) {
+        logger.error('Failed to create product', err)
+        res.status(500).send({ err: 'Failed to create product' })
     }
 }
 

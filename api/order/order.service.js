@@ -53,6 +53,30 @@ async function query(filterBy = { txt: '' }) {
     }
 }
 
+async function getByType(type) {
+    try {
+        const criteria = {}
+        if (type === 'strings') {
+            criteria['$and'] = [
+                { SKU: { $regex: new RegExp('0000$') } },
+                { SKU: { $regex: new RegExp('^10000') } }
+            ]
+        }
+        if (type === 'other') {
+            criteria.SKU = { $regex: new RegExp('^100000000') }
+        }
+        if (type === 'begged') {
+            criteria.SKU = { $regex: new RegExp('000000$') }
+        }
+        const collection = await dbService.getCollection('inventory')
+        let products = await collection.find(criteria).toArray()
+        return products
+    } catch (err) {
+        logger.error('cannot find products', err)
+        throw err
+    }
+}
+
 async function getById(orderId) {
     try {
         const collection = await dbService.getCollection('order')
@@ -128,11 +152,34 @@ async function add(productSKU, amount) {
     }
 }
 
+async function addNewProduct(Cost, DescriptionEng, DescriptionHeb, Inventory, Price, SKU, USDPrice) {
+    try {
+        const productToAdd = {
+            SKU,
+            'Description-Heb': DescriptionHeb,
+            'Description-Eng': DescriptionEng,
+            Inventory: +Inventory,
+            Cost: +Cost,
+            Price: +Price,
+            USDPrice: +USDPrice,
+            MinimumLevel: 5,
+            LastUpdate: Date.now(),
+        }
+        const collection = await dbService.getCollection('inventory')
+        await collection.insertOne(productToAdd)
+        return productToAdd
+    } catch (err) {
+        logger.error('cannot insert product', err)
+        throw err
+    }
+}
 
 export const orderService = {
     query,
     getById,
     getBySKU,
+    getByType,
     updateInventory,
-    add
+    add,
+    addNewProduct
 }
