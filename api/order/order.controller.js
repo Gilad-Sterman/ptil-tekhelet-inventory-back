@@ -5,9 +5,9 @@ import { orderService } from "./order.service.js";
 export async function getOrders(req, res) {
     try {
         const filterBy = {
-            from: new Date(req.query.from).getTime(),
-            to: new Date(req.query.to).getTime(),
-            maxNum: (req.query.maxNum) ? +req.query.maxNum : req.query.maxNum,
+            // from: new Date(req.query.from).getTime(),
+            // to: new Date(req.query.to).getTime(),
+            // maxNum: (req.query.maxNum) ? +req.query.maxNum : req.query.maxNum,
             sortBy: req.query.sortBy,
             categories: req.query.categories,
             moreCategories: req.query.moreCategories

@@ -10,42 +10,48 @@ async function query(filterBy = { txt: '' }) {
     const { from, to, maxNum, sortBy, categories, moreCategories } = filterBy
     try {
         const criteria = {
-            LastUpdate: { $gt: from, $lt: to },
+            // LastUpdate: { $gt: from, $lt: to },
             // $or: [
             //     { name: { $regex: filterBy.txt, $options: 'i' } },
             //     { createdBy: { $regex: filterBy.txt, $options: 'i' } }],
         }
-        if (maxNum !== '') criteria[' Inventory'] = { $lte: maxNum }
+        // if (maxNum !== '') criteria[' Inventory'] = { $lte: maxNum }
         if (categories) {
-            // if(categories.length )
-            // criteria['$or'] 
             criteria['$or'] = categories.map(category => {
-                if (category === 'other') return { SKU: { $lte: 10000000099 } }
+                if (category === 'other') return { SKU: { $regex: new RegExp('^100000000') } }
                 if (category === 'strings') return {
                     '$and': [
-                        {
-                            'SKU': {
-                                '$lt': 10000900000
-                            }
-                        }, {
-                            'SKU': {
-                                '$gt': 10000001000
-                            }
-                        }
+                        { SKU: { $regex: new RegExp('0000$') } },
+                        { SKU: { $regex: new RegExp('^10000') } }
                     ]
                 }
                 if (category === 'begaddim') {
-                    if (moreCategories?.includes('untied')) return { SKU: { $mod: [1000000, 0] } }
-                    return { SKU: { $gte: 10145000000 } }
+                    if (!moreCategories || moreCategories.length > 1) {
+                        return {
+                            '$or': [
+                                {
+                                    '$and': [
+                                        { 'SKU': { '$not': { '$regex': new RegExp('^10000') } } },
+                                        { 'SKU': { '$not': { '$regex': new RegExp('0000$') } } }]
+                                },
+                                { 'SKU': { '$regex': new RegExp('000000$') } }]
+                        }
+                    }
+                    if (moreCategories.includes('untied')) return { SKU: { $regex: new RegExp('000000$') } }
+                    return {
+                        '$and': [
+                            { 'SKU': { '$not': { '$regex': new RegExp('^10000') } } },
+                            { 'SKU': { '$not': { '$regex': new RegExp('0000$') } } }
+                        ]
+                    }
                 }
             })
         }
         // if (sortBy) criteria[' Inventory'] = { $lte: maxNum }
-        // if (filterBy.likedByUsers !== 'all') criteria.likedByUsers = { $in: filterBy.likedByUsers }
 
         const collection = await dbService.getCollection('inventory')
-        // let orders = await collection.find(criteria).sort({ [sortBy]: 1 }).toArray()
-        let orders = await collection.find(criteria).sort({ [sortBy]: 1 }).limit(30).toArray()
+        console.log(criteria);
+        let orders = await collection.find(criteria).sort({ [sortBy]: 1 }).limit(100).toArray()
         return orders
     } catch (err) {
         logger.error('cannot find orders', err)
