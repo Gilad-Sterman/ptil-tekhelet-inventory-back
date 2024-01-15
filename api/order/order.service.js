@@ -50,7 +50,6 @@ async function query(filterBy = { txt: '' }) {
         // if (sortBy) criteria[' Inventory'] = { $lte: maxNum }
 
         const collection = await dbService.getCollection('inventory')
-        console.log(criteria);
         let orders = await collection.find(criteria).sort({ [sortBy]: (sortDir === 'down') ? 1 : -1 }).limit(100).toArray()
         return orders
     } catch (err) {
