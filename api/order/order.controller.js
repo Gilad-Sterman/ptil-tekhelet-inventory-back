@@ -9,6 +9,7 @@ export async function getOrders(req, res) {
             // to: new Date(req.query.to).getTime(),
             // maxNum: (req.query.maxNum) ? +req.query.maxNum : req.query.maxNum,
             sortBy: req.query.sortBy,
+            sortDir: req.query.sortDir,
             categories: req.query.categories,
             moreCategories: req.query.moreCategories
         }

@@ -7,7 +7,7 @@ import { BEGGED, STRING, TYING } from '../../services/info.service.js'
 
 
 async function query(filterBy = { txt: '' }) {
-    const { from, to, maxNum, sortBy, categories, moreCategories } = filterBy
+    const { from, to, maxNum, sortBy, sortDir, categories, moreCategories } = filterBy
     try {
         const criteria = {
             // LastUpdate: { $gt: from, $lt: to },
@@ -51,7 +51,7 @@ async function query(filterBy = { txt: '' }) {
 
         const collection = await dbService.getCollection('inventory')
         console.log(criteria);
-        let orders = await collection.find(criteria).sort({ [sortBy]: 1 }).limit(100).toArray()
+        let orders = await collection.find(criteria).sort({ [sortBy]: (sortDir === 'down') ? 1 : -1 }).limit(100).toArray()
         return orders
     } catch (err) {
         logger.error('cannot find orders', err)
