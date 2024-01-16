@@ -13,11 +13,13 @@ async function query(filterBy = { txt: '' }) {
             $and: [{ LastUpdate: { $gt: from, $lt: to } }],
         }
         if (txt) {
-            criteria['$and'].push({ '$or': [
-                { 'Description-Heb': { $regex: txt, $options: 'i' } }, 
-                { 'Description-Eng': { $regex: txt, $options: 'i' } },
-                { SKU: { $regex: txt, $options: 'i' } }
-            ] })
+            criteria['$and'].push({
+                '$or': [
+                    { 'Description-Heb': { $regex: txt, $options: 'i' } },
+                    { 'Description-Eng': { $regex: txt, $options: 'i' } },
+                    { SKU: { $regex: txt, $options: 'i' } }
+                ]
+            })
         }
         if (maxNum) criteria['$and'].push({ Inventory: { $lte: maxNum } })
         if (categories) {
@@ -53,7 +55,7 @@ async function query(filterBy = { txt: '' }) {
             criteria['$and'].push({ $or: categoriesArr })
         }
 
-        if (specificCodes) {
+        if (specificCodes && categories) {
             if (specificCodes.begged) {
                 const codesArr = specificCodes.begged.map(begged => {
                     return { SKU: { $regex: new RegExp(`^1${begged}`) } }
@@ -61,7 +63,7 @@ async function query(filterBy = { txt: '' }) {
                 // console.log(codesArr);
                 criteria['$and'].push({ $or: codesArr })
             }
-            
+
             if (specificCodes.size) {
                 const codesArr = specificCodes.size.map(size => {
                     return { SKU: { $regex: new RegExp(`^.{3}${size}.{4}00$`) } }
@@ -69,16 +71,16 @@ async function query(filterBy = { txt: '' }) {
                 // console.log(codesArr);
                 criteria['$and'].push({ $or: codesArr })
             }
-            
-            if (specificCodes.strings) {
+
+            if (specificCodes.strings && moreCategories.includes('tied')) {
                 const codesArr = specificCodes.strings.map(string => {
                     return { SKU: { $regex: new RegExp(`^.{5}${string}.{2}00$`) } }
                 })
                 // console.log(codesArr);
                 criteria['$and'].push({ $or: codesArr })
             }
-            
-            if (specificCodes.tying) {
+
+            if (specificCodes.tying && moreCategories.includes('tied')) {
                 const codesArr = specificCodes.tying.map(tie => {
                     return { SKU: { $regex: new RegExp(`^.{7}${tie}00$`) } }
                 })
