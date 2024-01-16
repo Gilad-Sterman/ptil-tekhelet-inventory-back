@@ -7,17 +7,21 @@ import { BEGGED, STRING, TYING } from '../../services/info.service.js'
 
 
 async function query(filterBy = { txt: '' }) {
-    const { from, to, maxNum, sortBy, sortDir, categories, moreCategories } = filterBy
+    const { from, to, maxNum, txt, sortBy, sortDir, categories, moreCategories, specificCodes } = filterBy
     try {
         const criteria = {
-            // LastUpdate: { $gt: from, $lt: to },
-            // $or: [
-            //     { name: { $regex: filterBy.txt, $options: 'i' } },
-            //     { createdBy: { $regex: filterBy.txt, $options: 'i' } }],
+            $and: [{ LastUpdate: { $gt: from, $lt: to } }],
         }
-        // if (maxNum !== '') criteria[' Inventory'] = { $lte: maxNum }
+        if (txt) {
+            criteria['$and'].push({ '$or': [
+                { 'Description-Heb': { $regex: txt, $options: 'i' } }, 
+                { 'Description-Eng': { $regex: txt, $options: 'i' } },
+                { SKU: { $regex: txt, $options: 'i' } }
+            ] })
+        }
+        if (maxNum) criteria['$and'].push({ Inventory: { $lte: maxNum } })
         if (categories) {
-            criteria['$or'] = categories.map(category => {
+            const categoriesArr = categories.map(category => {
                 if (category === 'other') return { SKU: { $regex: new RegExp('^100000000') } }
                 if (category === 'strings') return {
                     '$and': [
@@ -46,9 +50,43 @@ async function query(filterBy = { txt: '' }) {
                     }
                 }
             })
+            criteria['$and'].push({ $or: categoriesArr })
         }
-        // if (sortBy) criteria[' Inventory'] = { $lte: maxNum }
 
+        if (specificCodes) {
+            if (specificCodes.begged) {
+                const codesArr = specificCodes.begged.map(begged => {
+                    return { SKU: { $regex: new RegExp(`^1${begged}`) } }
+                })
+                // console.log(codesArr);
+                criteria['$and'].push({ $or: codesArr })
+            }
+            
+            if (specificCodes.size) {
+                const codesArr = specificCodes.size.map(size => {
+                    return { SKU: { $regex: new RegExp(`^.{3}${size}.{4}00$`) } }
+                })
+                // console.log(codesArr);
+                criteria['$and'].push({ $or: codesArr })
+            }
+            
+            if (specificCodes.strings) {
+                const codesArr = specificCodes.strings.map(string => {
+                    return { SKU: { $regex: new RegExp(`^.{5}${string}.{2}00$`) } }
+                })
+                // console.log(codesArr);
+                criteria['$and'].push({ $or: codesArr })
+            }
+            
+            if (specificCodes.tying) {
+                const codesArr = specificCodes.tying.map(tie => {
+                    return { SKU: { $regex: new RegExp(`^.{7}${tie}00$`) } }
+                })
+                // console.log(codesArr);
+                criteria['$and'].push({ $or: codesArr })
+            }
+        }
+        console.log(criteria);
         const collection = await dbService.getCollection('inventory')
         let orders = await collection.find(criteria).sort({ [sortBy]: (sortDir === 'down') ? 1 : -1 }).limit(100).toArray()
         return orders

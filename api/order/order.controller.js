@@ -5,13 +5,15 @@ import { orderService } from "./order.service.js";
 export async function getOrders(req, res) {
     try {
         const filterBy = {
-            // from: new Date(req.query.from).getTime(),
-            // to: new Date(req.query.to).getTime(),
-            // maxNum: (req.query.maxNum) ? +req.query.maxNum : req.query.maxNum,
+            from: new Date(req.query.from),
+            to: new Date(req.query.to),
+            maxNum: (req.query.maxNum) ? +req.query.maxNum : req.query.maxNum,
             sortBy: req.query.sortBy,
+            txt: req.query.txt,
             sortDir: req.query.sortDir,
             categories: req.query.categories,
-            moreCategories: req.query.moreCategories
+            moreCategories: req.query.moreCategories,
+            specificCodes: req.query.specificCodes
         }
         logger.debug('Getting orders', filterBy)
         console.log('Getting orders', filterBy)
