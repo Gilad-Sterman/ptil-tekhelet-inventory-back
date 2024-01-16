@@ -155,7 +155,7 @@ async function updateInventory(product, increment) {
             'Price': product['Price'],
             'USDPrice': product['USDPrice'],
             'MinimumLevel': product['MinimumLevel'],
-            LastUpdate: Date.now(),
+            LastUpdate: new Date,
         }
         const collection = await dbService.getCollection('inventory')
         await collection.updateOne({ _id: ObjectId(product._id) }, { $set: productToSave })
@@ -185,7 +185,7 @@ async function add(productSKU, amount) {
             'Price': -0.1,
             'USDPrice': -0.1,
             'MinimumLevel': 5,
-            LastUpdate: Date.now(),
+            LastUpdate: new Date,
         }
         const collection = await dbService.getCollection('inventory')
         await collection.insertOne(productToAdd)
@@ -207,7 +207,7 @@ async function addNewProduct(Cost, DescriptionEng, DescriptionHeb, Inventory, Pr
             Price: +Price,
             USDPrice: +USDPrice,
             MinimumLevel: 5,
-            LastUpdate: Date.now(),
+            LastUpdate: new Date,
         }
         const collection = await dbService.getCollection('inventory')
         await collection.insertOne(productToAdd)
