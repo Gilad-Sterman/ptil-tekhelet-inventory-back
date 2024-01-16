@@ -86,7 +86,6 @@ async function query(filterBy = { txt: '' }) {
                 criteria['$and'].push({ $or: codesArr })
             }
         }
-        console.log(criteria);
         const collection = await dbService.getCollection('inventory')
         let orders = await collection.find(criteria).sort({ [sortBy]: (sortDir === 'down') ? 1 : -1 }).limit(100).toArray()
         return orders
