@@ -56,19 +56,17 @@ async function query(filterBy = { txt: '' }) {
         }
 
         if (specificCodes && categories) {
-            if (specificCodes.begged) {
+            if (specificCodes.begged && categories.includes('begaddim')) {
                 const codesArr = specificCodes.begged.map(begged => {
                     return { SKU: { $regex: new RegExp(`^1${begged}`) } }
                 })
-                // console.log(codesArr);
                 criteria['$and'].push({ $or: codesArr })
             }
 
-            if (specificCodes.size) {
+            if (specificCodes.size && categories.includes('begaddim')) {
                 const codesArr = specificCodes.size.map(size => {
                     return { SKU: { $regex: new RegExp(`^.{3}${size}.{4}00$`) } }
                 })
-                // console.log(codesArr);
                 criteria['$and'].push({ $or: codesArr })
             }
 
@@ -166,6 +164,18 @@ async function updateInventory(product, increment) {
     }
 }
 
+async function setInventory(product) {
+    const { SKU, Inventory } = product
+    try {
+        const collection = await dbService.getCollection('inventory')
+        await collection.updateOne({ SKU }, { $set: { Inventory, LastUpdate: new Date } })
+        return product
+    } catch (err) {
+        logger.error(`cannot update product ${SKU}`, err)
+        throw err
+    }
+}
+
 async function add(productSKU, amount) {
     const beggedHeb = BEGGED.find(begged => begged.code === productSKU.substring(1, 3)).heb
     const beggedEng = BEGGED.find(begged => begged.code === productSKU.substring(1, 3)).eng
@@ -224,6 +234,7 @@ export const orderService = {
     getBySKU,
     getByType,
     updateInventory,
+    setInventory,
     add,
     addNewProduct
 }

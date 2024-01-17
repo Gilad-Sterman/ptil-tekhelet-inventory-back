@@ -3,20 +3,21 @@ import { orderService } from "./order.service.js";
 
 
 export async function getOrders(req, res) {
+    const { from, to, maxNum, sortBy, txt, sortDir, categories, moreCategories, specificCodes } = req.query
     try {
         const filterBy = {
-            from: new Date(req.query.from),
-            to: new Date(req.query.to),
-            maxNum: (req.query.maxNum) ? +req.query.maxNum : req.query.maxNum,
-            sortBy: req.query.sortBy,
-            txt: req.query.txt,
-            sortDir: req.query.sortDir,
-            categories: req.query.categories,
-            moreCategories: req.query.moreCategories,
-            specificCodes: req.query.specificCodes
+            from: new Date(from),
+            to: new Date(to),
+            maxNum: (maxNum) ? +maxNum : maxNum,
+            sortBy: sortBy,
+            txt: txt,
+            sortDir: sortDir,
+            categories: categories,
+            moreCategories: moreCategories,
+            specificCodes: specificCodes
         }
         logger.debug('Getting orders', filterBy)
-        console.log('Getting orders', filterBy)
+        // console.log('Getting orders', filterBy)
         const orders = await orderService.query(filterBy)
         res.json(orders)
     } catch (err) {
@@ -89,7 +90,7 @@ export async function addNewProduct(req, res) {
     try {
         const { Cost, DescriptionEng, DescriptionHeb, Inventory, Price, SKU, USDPrice } = req.body
         const product = await orderService.getBySKU(SKU)
-        console.log('product:', product);
+        // console.log('product:', product);
         if (product) {
             res.json({ msg: 'product SKU already taken', product })
             return
@@ -102,3 +103,16 @@ export async function addNewProduct(req, res) {
     }
 }
 
+export async function updateBulkInventory(req, res) {
+    try {
+        const { products } = req.body
+        // console.log(products);
+        const updatedProducts = await products.forEach(product => {
+            return orderService.setInventory(product)
+        })
+        res.json(updatedProducts)
+    } catch (err) {
+        logger.error('Failed to update inventory', err)
+        res.status(500).send({ err: 'Failed to update inventory' })
+    }
+}

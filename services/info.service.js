@@ -139,12 +139,12 @@ export const BEGGED = [
     {
         code: '01',
         heb: 'א.א. פס לבן',
-        eng: 'Basic Black'
+        eng: 'Basic White'
     },
     {
         code: '02',
         heb: 'א.א.פס שחור',
-        eng: 'Basic White'
+        eng: 'Basic Black'
     },
     {
         code: '03',
