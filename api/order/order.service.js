@@ -7,7 +7,7 @@ import { BEGGED, STRING, TYING } from '../../services/info.service.js'
 
 
 async function query(filterBy = { txt: '' }) {
-    const { from, to, maxNum, txt, sortBy, sortDir, categories, moreCategories, specificCodes } = filterBy
+    const { from, to, txt, sortBy, sortDir, categories, moreCategories, specificCodes } = filterBy
     try {
         const criteria = {
             $and: [{ LastUpdate: { $gt: from, $lt: to } }],
@@ -21,7 +21,7 @@ async function query(filterBy = { txt: '' }) {
                 ]
             })
         }
-        if (maxNum) criteria['$and'].push({ Inventory: { $lte: maxNum } })
+        // if (maxNum) criteria['$and'].push({ Inventory: { $lte: maxNum } })
         if (categories) {
             const categoriesArr = categories.map(category => {
                 if (category === 'other') return { SKU: { $regex: new RegExp('^100000000') } }
@@ -87,7 +87,7 @@ async function query(filterBy = { txt: '' }) {
             }
         }
         const collection = await dbService.getCollection('inventory')
-        let orders = await collection.find(criteria).sort({ [sortBy]: (sortDir === 'down') ? 1 : -1 }).limit(100).toArray()
+        let orders = await collection.find(criteria).sort({ [sortBy]: (sortDir === 'down') ? 1 : -1 }).limit(200).toArray()
         return orders
     } catch (err) {
         logger.error('cannot find orders', err)
@@ -159,7 +159,7 @@ async function updateInventory(product, increment) {
         await collection.updateOne({ _id: ObjectId(product._id) }, { $set: productToSave })
         return productToSave
     } catch (err) {
-        logger.error(`cannot update station ${product._id}`, err)
+        logger.error(`cannot update product ${product._id}`, err)
         throw err
     }
 }

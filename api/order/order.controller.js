@@ -62,12 +62,13 @@ export async function updateInventory(req, res) {
         let updatedProduct
         if (!product) {
             updatedProduct = await orderService.add(productSKU, +amount)
+            logService.addNewLog({ type: `Added new product`, amount: +amount, description: `Added ${updatedProduct.SKU} - ${updatedProduct['Description-Heb']}`, products: [updatedProduct], SKUs: [updatedProduct.SKU] })
         } else {
             updatedProduct = await orderService.updateInventory(product, +amount)
         }
         await orderService.updateInventory(begged, -amount)
         await orderService.updateInventory(string, -amount)
-        await logService.addNewLog({ type: 'Updated Tied begged', amount: +amount, description: `Updated Begged:${begged.SKU} String:${string.SKU}`, products: [begged, string, product] })
+        logService.addNewLog({ type: 'Added Tied Begged Inventory', amount: +amount, description: `Updated Begged:${begged.SKU} String:${string.SKU}`, products: [begged, string, product], SKUs: [productSKU, stringSKU, beggedSKU] })
         res.json(updatedProduct)
     } catch (err) {
         logger.error('Failed to update inventory', err)
@@ -81,7 +82,7 @@ export async function updateInventoryBySKU(req, res) {
         const { amount } = req.body
         const product = await orderService.getBySKU(productSKU)
         const updatedProduct = await orderService.updateInventory(product, +amount)
-        await logService.addNewLog({ type: `Updated ${product.SKU}`, amount: +amount, description: `Updated ${product.SKU} - ${product['Description-Heb']}`, products: [product] })
+        logService.addNewLog({ type: `Added Invetory`, amount: +amount, description: `Updated ${updatedProduct.SKU} - ${updatedProduct['Description-Heb']}`, products: [updatedProduct], SKUs: [updatedProduct.SKU] })
         res.json(updatedProduct)
     } catch (err) {
         logger.error('Failed to update inventory', err)
@@ -95,12 +96,12 @@ export async function addNewProduct(req, res) {
         const product = await orderService.getBySKU(SKU)
         // console.log('product:', product);
         if (product) {
-            await logService.addNewLog({ type: `tried to add new product, SKU taken`, amount: 0, description: `Tried to add ${product.SKU} - ${product['Description-Heb']}`, products: [product] })
+            await logService.addNewLog({ type: `tried to add new product, SKU taken`, amount: 0, description: `Tried to add ${product.SKU} - ${product['Description-Heb']}`, products: [product], SKUs: [product.SKU] })
             res.json({ msg: 'product SKU already taken', product })
             return
         }
         const newProduct = await orderService.addNewProduct(Cost, DescriptionEng, DescriptionHeb, Inventory, Price, SKU, USDPrice)
-        await logService.addNewLog({ type: `Added new product`, amount: +Inventory, description: `Added ${newProduct.SKU} - ${newProduct['Description-Heb']}`, products: [newProduct] })
+        logService.addNewLog({ type: `Added new product`, amount: +Inventory, description: `Added ${newProduct.SKU} - ${newProduct['Description-Heb']}`, products: [newProduct], SKUs: [newProduct.SKU] })
         res.json(newProduct)
     } catch (err) {
         logger.error('Failed to create product', err)
@@ -113,11 +114,15 @@ export async function updateBulkInventory(req, res) {
         const { products } = req.body
         // console.log(products);
         const updatedProducts = await products.forEach(async (product) => {
-            await logService.addNewLog({ type: `Updated ${product.SKU} ${(products.length > 1) ? 'in bulk update':''}`, amount: 1, description: `Updated ${product.SKU} - Inventory: ${product.Inventory}`, products: [product] })
             const res = await orderService.setInventory(product)
+            logService.addNewLog({ type: `Updated ${product.SKU}${(products.length > 1) ? ' in bulk update' : ''}`, amount: 1, description: `Updated ${product.SKU} - Inventory: ${product.Inventory}`, products: [product], SKUs: [product.SKU] })
             return res
         })
-        if (products.length > 1) await logService.addNewLog({ type: `Bulk Update`, amount: products.length, description: `Bulk update`, products: [products] })
+
+        if (products.length > 1) {
+            const SKUs = products.map(product => product.SKU)
+            logService.addNewLog({ type: `Bulk Update`, amount: products.length, description: `Bulk update`, products: [products], SKUs })
+        }
         res.json(updatedProducts)
     } catch (err) {
         logger.error('Failed to update inventory', err)

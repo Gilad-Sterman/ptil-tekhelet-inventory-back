@@ -7,13 +7,14 @@ export const logService = {
     addNewLog
 }
 
-async function addNewLog({ type, userName, amount, description, products }) {
+async function addNewLog({ type, userName, amount, description, products, SKUs }) {
     try {
         const logToAdd = {
             date: new Date,
             type,
             userName: userName || 'no-user',
             description,
+            SKUs,
             amount,
         }
         if (products) logToAdd.products = products
