@@ -17,7 +17,7 @@ export async function getOrders(req, res) {
             moreCategories: moreCategories,
             specificCodes: specificCodes
         }
-        logger.debug('Getting orders', filterBy)
+        logger.debug('Getting orders')
         // console.log('Getting orders', filterBy)
         const orders = await orderService.query(filterBy)
         res.json(orders)
@@ -32,7 +32,7 @@ export async function getproductsByType(req, res) {
     try {
         const type = req.params.type
         logger.debug(`Getting ${type}`)
-        console.log(`Getting ${type}`)
+        // console.log(`Getting ${type}`)
         const products = await orderService.getByType(type)
         res.json(products)
     } catch (err) {
