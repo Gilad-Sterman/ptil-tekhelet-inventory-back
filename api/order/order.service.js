@@ -7,7 +7,7 @@ import { BEGGED, STRING, TYING } from '../../services/info.service.js'
 
 
 async function query(filterBy = { txt: '' }) {
-    const { from, to, txt, sortBy, sortDir, categories, moreCategories, specificCodes } = filterBy
+    const { from, to, txt, sortBy, sortDir, maxNum, categories, moreCategories, specificCodes } = filterBy
     try {
         const criteria = {
             $and: [{ LastUpdate: { $gt: from, $lt: to } }],
@@ -21,7 +21,7 @@ async function query(filterBy = { txt: '' }) {
                 ]
             })
         }
-        // if (maxNum) criteria['$and'].push({ Inventory: { $lte: maxNum } })
+        if (maxNum) criteria['$and'].push({ $expr: { $lt: ['$Inventory', '$MinimumLevel'] } })
         if (categories) {
             const categoriesArr = categories.map(category => {
                 if (category === 'other') return { SKU: { $regex: new RegExp('^100000000') } }
@@ -70,7 +70,7 @@ async function query(filterBy = { txt: '' }) {
                 criteria['$and'].push({ $or: codesArr })
             }
 
-            if (specificCodes.strings && moreCategories.includes('tied')) {
+            if (specificCodes.strings && moreCategories?.includes('tied')) {
                 const codesArr = specificCodes.strings.map(string => {
                     return { SKU: { $regex: new RegExp(`^.{5}${string}.{2}00$`) } }
                 })
@@ -78,7 +78,7 @@ async function query(filterBy = { txt: '' }) {
                 criteria['$and'].push({ $or: codesArr })
             }
 
-            if (specificCodes.tying && moreCategories.includes('tied')) {
+            if (specificCodes.tying && moreCategories?.includes('tied')) {
                 const codesArr = specificCodes.tying.map(tie => {
                     return { SKU: { $regex: new RegExp(`^.{7}${tie}00$`) } }
                 })

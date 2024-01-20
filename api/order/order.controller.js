@@ -9,16 +9,16 @@ export async function getOrders(req, res) {
         const filterBy = {
             from: new Date(from),
             to: new Date(to),
-            maxNum: (maxNum) ? +maxNum : maxNum,
+            maxNum: (maxNum === 'true') ? true : false,
             sortBy: sortBy,
-            txt: txt,
+            txt: txt.trim(),
             sortDir: sortDir,
             categories: categories,
             moreCategories: moreCategories,
             specificCodes: specificCodes
         }
         logger.debug('Getting orders')
-        // console.log('Getting orders', filterBy)
+        console.log('Getting orders', filterBy)
         const orders = await orderService.query(filterBy)
         res.json(orders)
     } catch (err) {
