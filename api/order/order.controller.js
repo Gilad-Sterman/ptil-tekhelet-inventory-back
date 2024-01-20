@@ -5,13 +5,17 @@ import { orderService } from "./order.service.js";
 
 export async function getOrders(req, res) {
     const { from, to, maxNum, sortBy, txt, sortDir, categories, moreCategories, specificCodes } = req.query
+    let isSku = false
+    if(txt[0] === '1') {
+        isSku = true
+    }
     try {
         const filterBy = {
             from: new Date(from),
             to: new Date(to),
             maxNum: (maxNum === 'true') ? true : false,
             sortBy: sortBy,
-            txt: txt.trim().replace(/[\r\n]+$/,''),
+            txt: isSku ? txt.trim().slice(0,10) : txt.trim(),
             sortDir: sortDir,
             categories: categories,
             moreCategories: moreCategories,
