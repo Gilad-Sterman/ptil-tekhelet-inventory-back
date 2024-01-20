@@ -11,7 +11,7 @@ export async function getOrders(req, res) {
             to: new Date(to),
             maxNum: (maxNum === 'true') ? true : false,
             sortBy: sortBy,
-            txt: txt.trim(),
+            txt: txt.trim().replace(/[\r\n]+$/,''),
             sortDir: sortDir,
             categories: categories,
             moreCategories: moreCategories,
