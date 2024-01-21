@@ -22,7 +22,7 @@ export async function getOrders(req, res) {
             specificCodes: specificCodes
         }
         logger.debug('Getting orders')
-        console.log('Getting orders', filterBy)
+        // console.log('Getting orders', filterBy)
         const orders = await orderService.query(filterBy)
         res.json(orders)
     } catch (err) {
