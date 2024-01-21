@@ -15,9 +15,9 @@ async function query(filterBy = { txt: '' }) {
         if (txt) {
             criteria['$and'].push({
                 '$or': [
-                    { 'Description-Heb': { $regex: txt, $options: 'i' } },
-                    { 'Description-Eng': { $regex: txt, $options: 'i' } },
-                    { SKU: { $regex: txt, $options: 'i' } }
+                    { 'Description-Heb': { $regex: txt.trim(), $options: 'i' } },
+                    { 'Description-Eng': { $regex: txt.trim(), $options: 'i' } },
+                    { SKU: { $regex: txt.trim(), $options: 'i' } }
                 ]
             })
         }

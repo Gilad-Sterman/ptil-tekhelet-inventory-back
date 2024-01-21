@@ -5,24 +5,19 @@ import { orderService } from "./order.service.js";
 
 export async function getOrders(req, res) {
     const { from, to, maxNum, sortBy, txt, sortDir, categories, moreCategories, specificCodes } = req.query
-    let isSku = false
-    if (txt[0] === '1') {
-        isSku = true
-    }
+
     try {
         const filterBy = {
             from: new Date(from),
             to: new Date(to),
             maxNum: (maxNum === 'true') ? true : false,
             sortBy: sortBy,
-            txt: isSku ? txt.trim().slice(0, 9) : txt.trim(),
+            txt,
             sortDir: sortDir,
             categories: categories,
             moreCategories: moreCategories,
             specificCodes: specificCodes
         }
-        logger.debug('Getting orders')
-        // console.log('Getting orders', filterBy)
         const orders = await orderService.query(filterBy)
         res.json(orders)
     } catch (err) {
