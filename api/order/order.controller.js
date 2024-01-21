@@ -18,6 +18,7 @@ export async function getOrders(req, res) {
             moreCategories: moreCategories,
             specificCodes: specificCodes
         }
+        // console.log('getting products', filterBy);
         const orders = await orderService.query(filterBy)
         res.json(orders)
     } catch (err) {
