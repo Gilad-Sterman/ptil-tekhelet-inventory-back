@@ -6,7 +6,7 @@ import { orderService } from "./order.service.js";
 export async function getOrders(req, res) {
     const { from, to, maxNum, sortBy, txt, sortDir, categories, moreCategories, specificCodes } = req.query
     let isSku = false
-    if(txt[0] === '1') {
+    if (txt[0] === '1') {
         isSku = true
     }
     try {
@@ -15,7 +15,7 @@ export async function getOrders(req, res) {
             to: new Date(to),
             maxNum: (maxNum === 'true') ? true : false,
             sortBy: sortBy,
-            txt: isSku ? txt.trim().slice(0,9) : txt.trim(),
+            txt: isSku ? txt.trim().slice(0, 9) : txt.trim(),
             sortDir: sortDir,
             categories: categories,
             moreCategories: moreCategories,
@@ -96,15 +96,16 @@ export async function updateInventoryBySKU(req, res) {
 
 export async function addNewProduct(req, res) {
     try {
-        const { Cost, DescriptionEng, DescriptionHeb, Inventory, Price, SKU, USDPrice } = req.body
+        const { Cost, Inventory, Price, SKU, USDPrice, Location, MinimumLevel } = req.body
+        const DescriptionEng = req.body['Description-Eng']
+        const DescriptionHeb = req.body['Description-Heb']
         const product = await orderService.getBySKU(SKU)
-        // console.log('product:', product);
         if (product) {
             await logService.addNewLog({ type: `tried to add new product, SKU taken`, amount: 0, description: `Tried to add ${product.SKU} - ${product['Description-Heb']}`, products: [product], SKUs: [product.SKU] })
             res.json({ msg: 'product SKU already taken', product })
             return
         }
-        const newProduct = await orderService.addNewProduct(Cost, DescriptionEng, DescriptionHeb, Inventory, Price, SKU, USDPrice)
+        const newProduct = await orderService.addNewProduct(Cost, DescriptionEng, DescriptionHeb, Inventory, Price, SKU, USDPrice, Location, MinimumLevel)
         logService.addNewLog({ type: `Added new product`, amount: +Inventory, description: `Added ${newProduct.SKU} - ${newProduct['Description-Heb']}`, products: [newProduct], SKUs: [newProduct.SKU] })
         res.json(newProduct)
     } catch (err) {

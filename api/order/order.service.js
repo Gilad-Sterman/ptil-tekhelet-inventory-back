@@ -206,7 +206,7 @@ async function add(productSKU, amount) {
     }
 }
 
-async function addNewProduct(Cost, DescriptionEng, DescriptionHeb, Inventory, Price, SKU, USDPrice) {
+async function addNewProduct(Cost, DescriptionEng, DescriptionHeb, Inventory, Price, SKU, USDPrice, Location, MinimumLevel) {
     try {
         const productToAdd = {
             SKU,
@@ -216,7 +216,8 @@ async function addNewProduct(Cost, DescriptionEng, DescriptionHeb, Inventory, Pr
             Cost: +Cost,
             Price: +Price,
             USDPrice: +USDPrice,
-            MinimumLevel: 5,
+            MinimumLevel: +MinimumLevel,
+            Location,
             LastUpdate: new Date,
         }
         const collection = await dbService.getCollection('inventory')
