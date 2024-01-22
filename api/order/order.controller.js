@@ -55,20 +55,20 @@ export async function getOrderById(req, res) {
 
 export async function updateInventory(req, res) {
     try {
-        const { productSKU, stringSKU, beggedSKU, amount } = req.body
+        const { productSKU, stringSKU, beggedSKU, amount, loggedUser } = req.body
         const string = await orderService.getBySKU(stringSKU)
         const begged = await orderService.getBySKU(beggedSKU)
         const product = await orderService.getBySKU(productSKU)
         let updatedProduct
         if (!product) {
             updatedProduct = await orderService.add(productSKU, +amount)
-            logService.addNewLog({ type: `Added new product`, amount: +amount, description: `Added ${updatedProduct.SKU} - ${updatedProduct['Description-Heb']}`, products: [updatedProduct], SKUs: [updatedProduct.SKU] })
+            logService.addNewLog({ type: `Added new product`, amount: +amount, description: `Added ${updatedProduct.SKU} - ${updatedProduct['Description-Heb']}`, products: [updatedProduct], SKUs: [updatedProduct.SKU], userName: loggedUser.username })
         } else {
             updatedProduct = await orderService.updateInventory(product, +amount)
         }
         await orderService.updateInventory(begged, -amount)
         await orderService.updateInventory(string, -amount)
-        logService.addNewLog({ type: 'Added Tied Begged Inventory', amount: +amount, description: `Updated Begged:${begged.SKU} String:${string.SKU}`, products: [begged, string, product], SKUs: [productSKU, stringSKU, beggedSKU] })
+        logService.addNewLog({ type: 'Added Tied Begged Inventory', amount: +amount, description: `Updated Begged:${begged.SKU} String:${string.SKU}`, products: [begged, string, product], SKUs: [productSKU, stringSKU, beggedSKU], userName: loggedUser.username })
         res.json(updatedProduct)
     } catch (err) {
         logger.error('Failed to update inventory', err)
@@ -79,10 +79,10 @@ export async function updateInventory(req, res) {
 export async function updateInventoryBySKU(req, res) {
     try {
         const productSKU = req.params.SKU
-        const { amount } = req.body
+        const { amount, loggedUser } = req.body
         const product = await orderService.getBySKU(productSKU)
         const updatedProduct = await orderService.updateInventory(product, +amount)
-        logService.addNewLog({ type: `Added Invetory`, amount: +amount, description: `Updated ${updatedProduct.SKU} - ${updatedProduct['Description-Heb']}`, products: [updatedProduct], SKUs: [updatedProduct.SKU] })
+        logService.addNewLog({ type: `Added Invetory`, amount: +amount, description: `Updated ${updatedProduct.SKU} - ${updatedProduct['Description-Heb']}`, products: [updatedProduct], SKUs: [updatedProduct.SKU], userName: loggedUser.username })
         res.json(updatedProduct)
     } catch (err) {
         logger.error('Failed to update inventory', err)
@@ -92,17 +92,17 @@ export async function updateInventoryBySKU(req, res) {
 
 export async function addNewProduct(req, res) {
     try {
-        const { Cost, Inventory, Price, SKU, USDPrice, Location, MinimumLevel } = req.body
+        const { Cost, Inventory, Price, SKU, USDPrice, Location, MinimumLevel, loggedUser } = req.body
         const DescriptionEng = req.body['Description-Eng']
         const DescriptionHeb = req.body['Description-Heb']
         const product = await orderService.getBySKU(SKU)
         if (product) {
-            await logService.addNewLog({ type: `tried to add new product, SKU taken`, amount: 0, description: `Tried to add ${product.SKU} - ${product['Description-Heb']}`, products: [product], SKUs: [product.SKU] })
+            await logService.addNewLog({ type: `tried to add new product, SKU taken`, amount: 0, description: `Tried to add ${product.SKU} - ${product['Description-Heb']}`, products: [product], SKUs: [product.SKU], userName: loggedUser.username })
             res.json({ msg: 'product SKU already taken', product })
             return
         }
         const newProduct = await orderService.addNewProduct(Cost, DescriptionEng, DescriptionHeb, Inventory, Price, SKU, USDPrice, Location, MinimumLevel)
-        logService.addNewLog({ type: `Added new product`, amount: +Inventory, description: `Added ${newProduct.SKU} - ${newProduct['Description-Heb']}`, products: [newProduct], SKUs: [newProduct.SKU] })
+        logService.addNewLog({ type: `Added new product`, amount: +Inventory, description: `Added ${newProduct.SKU} - ${newProduct['Description-Heb']}`, products: [newProduct], SKUs: [newProduct.SKU], userName: loggedUser.username })
         res.json(newProduct)
     } catch (err) {
         logger.error('Failed to create product', err)
@@ -112,17 +112,17 @@ export async function addNewProduct(req, res) {
 
 export async function updateBulkInventory(req, res) {
     try {
-        const { products } = req.body
+        const { products, loggedUser } = req.body
         // console.log(products);
         const updatedProducts = await products.forEach(async (product) => {
             const res = await orderService.setInventory(product)
-            logService.addNewLog({ type: `Updated ${product.SKU}${(products.length > 1) ? ' in bulk update' : ''}`, amount: 1, description: `Updated ${product.SKU} - Inventory: ${product.Inventory}`, products: [product], SKUs: [product.SKU] })
+            logService.addNewLog({ type: `Updated ${product.SKU}${(products.length > 1) ? ' in bulk update' : ''}`, amount: 1, description: `Updated ${product.SKU} - Inventory: ${product.Inventory}`, products: [product], SKUs: [product.SKU], userName: loggedUser.username })
             return res
         })
 
         if (products.length > 1) {
             const SKUs = products.map(product => product.SKU)
-            logService.addNewLog({ type: `Bulk Update`, amount: products.length, description: `Bulk update`, products: [products], SKUs })
+            logService.addNewLog({ type: `Bulk Update`, amount: products.length, description: `Bulk update`, products: [products], SKUs, userName: loggedUser.username })
         }
         res.json(updatedProducts)
     } catch (err) {
