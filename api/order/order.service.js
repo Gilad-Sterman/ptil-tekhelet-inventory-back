@@ -63,7 +63,7 @@ async function query(filterBy = { txt: '' }) {
                 criteria['$and'].push({ $or: codesArr })
             }
 
-            if (specificCodes.size && categories.includes('begaddim')) {
+            if (specificCodes.size && (categories.includes('begaddim') || categories.includes('other'))) {
                 const codesArr = specificCodes.size.map(size => {
                     return { SKU: { $regex: new RegExp(`^.{3}${size}.{4}00$`) } }
                 })
