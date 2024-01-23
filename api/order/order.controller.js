@@ -82,7 +82,7 @@ export async function updateInventoryBySKU(req, res) {
         const { amount, loggedUser } = req.body
         const product = await orderService.getBySKU(productSKU)
         const updatedProduct = await orderService.updateInventory(product, +amount)
-        logService.addNewLog({ type: `Added Invetory`, amount: +amount, description: `Updated ${updatedProduct.SKU} - ${updatedProduct['Description-Heb']}`, products: [updatedProduct], SKUs: [updatedProduct.SKU], userName: loggedUser.username })
+        logService.addNewLog({ type: `Added Inventory`, amount: +amount, description: `Updated ${updatedProduct.SKU} - ${updatedProduct['Description-Heb']}`, products: [updatedProduct], SKUs: [updatedProduct.SKU], userName: loggedUser.username })
         res.json(updatedProduct)
     } catch (err) {
         logger.error('Failed to update inventory', err)
