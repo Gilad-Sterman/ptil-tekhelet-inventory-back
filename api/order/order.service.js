@@ -24,7 +24,7 @@ async function query(filterBy = { txt: '' }) {
         if (maxNum) criteria['$and'].push({ $expr: { $lt: ['$Inventory', '$MinimumLevel'] } })
         if (categories) {
             const categoriesArr = categories.map(category => {
-                if (category === 'other') return { SKU: { $regex: new RegExp('^100000000') } }
+                if (category === 'other') return { SKU: { $regex: new RegExp('^100.{2}0000.{2}') } }
                 if (category === 'strings') return {
                     '$and': [
                         { SKU: { $regex: new RegExp('0000$') } },
@@ -65,7 +65,7 @@ async function query(filterBy = { txt: '' }) {
 
             if (specificCodes.size && (categories.includes('begaddim') || categories.includes('other'))) {
                 const codesArr = specificCodes.size.map(size => {
-                    return { SKU: { $regex: new RegExp(`^.{3}${size}.{4}00$`) } }
+                    return { SKU: { $regex: new RegExp(`^.{3}${size}.{6}$`) } }
                 })
                 criteria['$and'].push({ $or: codesArr })
             }
@@ -105,10 +105,28 @@ async function getByType(type) {
             ]
         }
         if (type === 'other') {
-            criteria.SKU = { $regex: new RegExp('^100000000') }
+            criteria.SKU = { $regex: new RegExp('^100.{2}0000.{2}') }
         }
         if (type === 'begged') {
             criteria.SKU = { $regex: new RegExp('000000$') }
+        }
+        const collection = await dbService.getCollection('inventory')
+        let products = await collection.find(criteria).toArray()
+        return products
+    } catch (err) {
+        logger.error('cannot find products', err)
+        throw err
+    }
+}
+
+async function getSizes(type, code) {
+    try {
+        const criteria = {}
+        if (type === 'other') {
+            criteria.SKU = { $regex: new RegExp(`^100.{2}0000${code}`) }
+        }
+        if (type === 'begged') {
+            criteria.SKU = { $regex: new RegExp(`^1${code}.{2}000000$`) }
         }
         const collection = await dbService.getCollection('inventory')
         let products = await collection.find(criteria).toArray()
@@ -234,6 +252,7 @@ export const orderService = {
     getById,
     getBySKU,
     getByType,
+    getSizes,
     updateInventory,
     setInventory,
     add,

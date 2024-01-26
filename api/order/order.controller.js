@@ -42,6 +42,19 @@ export async function getproductsByType(req, res) {
     }
 }
 
+export async function getproductSizes(req, res) {
+    try {
+        const type = req.query.type
+        const code = req.query.code
+        logger.debug(`Getting sizes for ${type, code}`)
+        const products = await orderService.getSizes(type, code)
+        res.json(products)
+    } catch (err) {
+        logger.error('Failed to get sizes', err)
+        res.status(500).send({ err: 'Failed to get orders' })
+    }
+}
+
 export async function getOrderById(req, res) {
     try {
         const orderId = req.params.id
