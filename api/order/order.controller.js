@@ -143,3 +143,7 @@ export async function updateBulkInventory(req, res) {
         res.status(500).send({ err: 'Failed to update inventory' })
     }
 }
+
+export function icountInfo(req, res) {
+    res.status(200).send({ msg: 'msg' })
+}

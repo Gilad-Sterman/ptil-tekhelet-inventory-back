@@ -1,5 +1,5 @@
 import express from 'express'
-import { getOrders, getOrderById, updateInventory, updateInventoryBySKU, addNewProduct, getproductsByType, updateBulkInventory, getproductSizes } from './order.controller.js'
+import { getOrders, getOrderById, updateInventory, updateInventoryBySKU, addNewProduct, getproductsByType, updateBulkInventory, getproductSizes, icountInfo } from './order.controller.js'
 
 export const orderRoutes = express.Router()
 
@@ -11,4 +11,5 @@ orderRoutes.put('/', updateInventory)
 orderRoutes.put('/bulk', updateBulkInventory)
 orderRoutes.put('/:SKU', updateInventoryBySKU)
 orderRoutes.post('/new', addNewProduct)
+orderRoutes.post('/icount', icountInfo)
 
