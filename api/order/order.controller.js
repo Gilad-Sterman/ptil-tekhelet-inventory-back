@@ -145,5 +145,6 @@ export async function updateBulkInventory(req, res) {
 }
 
 export function icountInfo(req, res) {
+    const { items } = req.body
     res.status(200).send({ msg: 'msg' })
 }
