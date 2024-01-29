@@ -40,12 +40,15 @@ if (process.env.NODE_ENV === 'production') {
 import { setupSocketAPI } from './services/socket.service.js'
 
 import { orderRoutes } from './api/order/order.routes.js'
-
+import { dyingRoutes } from './api/dying/dying.routes.js'
+import { shziraRoutes } from './api/shzira/shzira.routes.js'
 
 import { setupAsyncLocalStorage } from './middlewares/setupAls.middleware.js'
 app.all('*', setupAsyncLocalStorage)
 
 app.use('/api/order', orderRoutes)
+app.use('/api/dying', dyingRoutes)
+app.use('/api/shzira', shziraRoutes)
 setupSocketAPI(server)
 
 
