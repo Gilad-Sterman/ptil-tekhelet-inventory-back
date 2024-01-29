@@ -24,11 +24,11 @@ export async function addShziraEvent(req, res) {
             Date: new Date(date),
             User: loggedUser.username,
             type,
-            maslulim,
+            shezira_runs: maslulim,
             sets
         }
         const newShziraEvent = await shziraService.add(eventToAdd)
-        logService.addNewLog({ type: `Added New Shzira Event`, amount: sets, description: `Added ${type}, Maslulim: ${maslulim}`, products: [], SKUs: [], userName: loggedUser.username })
+        logService.addNewLog({ type: `Added New Shzira Event`, amount: sets, description: `Added ${type}, Shezira-runs: ${maslulim}`, products: [], SKUs: [], userName: loggedUser.username })
         res.json(newShziraEvent)
     } catch (err) {
         logger.error('Failed to add event', err)
