@@ -126,13 +126,12 @@ export async function addNewProduct(req, res) {
 export async function updateBulkInventory(req, res) {
     try {
         const { products, loggedUser } = req.body
-        // console.log(products);
-        const updatedProducts = await products.forEach(async (product) => {
-            const res = await orderService.setInventory(product)
-            logService.addNewLog({ type: `Updated ${product.SKU}${(products.length > 1) ? ' in bulk update' : ''}`, amount: 1, description: `Updated ${product.SKU} - Inventory: ${product.Inventory}`, products: [product], SKUs: [product.SKU], userName: loggedUser.username })
-            return res
-        })
-
+        const updatedProducts = []
+        for (const product of products) {
+            const updatedProduct = await orderService.setInventory(product)
+            logService.addNewLog({ type: `Updated ${product.SKU}${(products.length > 1) ? ' in bulk update' : ''}`, amount: 1, description: `Updated ${product.SKU} - Inventory: ${product.Inventory} - Location: ${product.Location}`, products: [product], SKUs: [product.SKU], userName: loggedUser.username })
+            updatedProducts.push(updatedProduct)
+        }
         if (products.length > 1) {
             const SKUs = products.map(product => product.SKU)
             logService.addNewLog({ type: `Bulk Update`, amount: products.length, description: `Bulk update`, products: [products], SKUs, userName: loggedUser.username })
@@ -144,7 +143,29 @@ export async function updateBulkInventory(req, res) {
     }
 }
 
-export function icountInfo(req, res) {
-    const { items } = req.body
-    res.status(200).send({ msg: 'msg' })
+export async function icountInfo(req, res) {
+    try {
+        const { items } = req.body
+        const myItems = items.map(item => {
+            return {
+                doctype: item.doctype,
+                inventory_item_makat: item.inventory_item_makat,
+                description: item.description,
+                quantity: +item.quantity,
+                sku: item.sku + '',
+            }
+        })
+        const products = []
+        for (const item of myItems) {
+            const product = await orderService.getBySKU(item.sku)
+            const updatedProduct = await orderService.updateInventory(product, -item.quantity)
+            products.push(updatedProduct)
+
+        }
+        res.json(products)
+    } catch (err) {
+        logger.error('Failed to update inventory from Icount', err)
+        res.status(500).send({ err: 'Failed to update inventory from Icount' })
+    }
+
 }

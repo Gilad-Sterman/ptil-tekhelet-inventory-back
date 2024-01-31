@@ -183,10 +183,10 @@ async function updateInventory(product, increment) {
 }
 
 async function setInventory(product) {
-    const { SKU, Inventory } = product
+    const { SKU, Inventory, Location } = product
     try {
         const collection = await dbService.getCollection('inventory')
-        await collection.updateOne({ SKU }, { $set: { Inventory, LastUpdate: new Date } })
+        await collection.updateOne({ SKU }, { $set: { Inventory, LastUpdate: new Date, Location } })
         return product
     } catch (err) {
         logger.error(`cannot update product ${SKU}`, err)
