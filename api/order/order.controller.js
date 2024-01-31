@@ -143,29 +143,29 @@ export async function updateBulkInventory(req, res) {
     }
 }
 
-export async function icountInfo(req, res) {
-    try {
-        const { items } = req.body
-        const myItems = items.map(item => {
-            return {
-                doctype: item.doctype,
-                inventory_item_makat: item.inventory_item_makat,
-                description: item.description,
-                quantity: +item.quantity,
-                sku: item.sku + '',
-            }
-        })
-        const products = []
-        for (const item of myItems) {
-            const product = await orderService.getBySKU(item.sku)
-            const updatedProduct = await orderService.updateInventory(product, -item.quantity)
-            products.push(updatedProduct)
+// export async function icountInfo(req, res) {
+//     try {
+//         const { items } = req.body
+//         const myItems = items.map(item => {
+//             return {
+//                 doctype: item.doctype,
+//                 inventory_item_makat: item.inventory_item_makat,
+//                 description: item.description,
+//                 quantity: +item.quantity,
+//                 sku: item.sku + '',
+//             }
+//         })
+//         const products = []
+//         for (const item of myItems) {
+//             const product = await orderService.getBySKU(item.sku)
+//             const updatedProduct = await orderService.updateInventory(product, -item.quantity)
+//             products.push(updatedProduct)
 
-        }
-        res.json(products)
-    } catch (err) {
-        logger.error('Failed to update inventory from Icount', err)
-        res.status(500).send({ err: 'Failed to update inventory from Icount' })
-    }
+//         }
+//         res.json(products)
+//     } catch (err) {
+//         logger.error('Failed to update inventory from Icount', err)
+//         res.status(500).send({ err: 'Failed to update inventory from Icount' })
+//     }
 
-}
+// }
