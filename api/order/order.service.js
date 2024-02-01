@@ -9,7 +9,7 @@ import { BEGGED, STRING, TYING } from '../../services/info.service.js'
 async function query(filterBy = { txt: '' }) {
     const { from, to, txt, sortBy, sortDir, maxNum, categories, moreCategories, specificCodes } = filterBy
     try {
-        const criteria = {
+        let criteria = {
             $and: [{ LastUpdate: { $gt: from, $lt: to } }],
         }
         if (txt) {
@@ -84,6 +84,15 @@ async function query(filterBy = { txt: '' }) {
                 })
                 // console.log(codesArr);
                 criteria['$and'].push({ $or: codesArr })
+            }
+        }
+        if (!from && !to) {
+            criteria = {
+                '$or': [
+                    { 'Description-Heb': { $regex: txt.trim(), $options: 'i' } },
+                    { 'Description-Eng': { $regex: txt.trim(), $options: 'i' } },
+                    { SKU: { $regex: txt.trim(), $options: 'i' } }
+                ]
             }
         }
         const collection = await dbService.getCollection('inventory')

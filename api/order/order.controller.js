@@ -8,8 +8,8 @@ export async function getOrders(req, res) {
 
     try {
         const filterBy = {
-            from: new Date(from),
-            to: new Date(to),
+            from: from ? new Date(from) : null,
+            to: to ? new Date(to) : null,
             maxNum: (maxNum === 'true') ? true : false,
             sortBy: sortBy,
             txt,
@@ -157,15 +157,17 @@ export async function updateBulkInventory(req, res) {
 //         })
 //         const products = []
 //         for (const item of myItems) {
-//             const product = await orderService.getBySKU(item.sku)
-//             const updatedProduct = await orderService.updateInventory(product, -item.quantity)
-//             products.push(updatedProduct)
-
+//             if (item.doctype === 'invrec' || item.doctype === 'invoice') {
+//                 const product = await orderService.getBySKU(item.sku)
+//                 if (product) {
+//                     const updatedProduct = await orderService.updateInventory(product, -item.quantity)
+//                     products.push(updatedProduct)
+//                 }
+//             }
 //         }
 //         res.json(products)
 //     } catch (err) {
 //         logger.error('Failed to update inventory from Icount', err)
 //         res.status(500).send({ err: 'Failed to update inventory from Icount' })
 //     }
-
 // }
