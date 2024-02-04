@@ -143,31 +143,34 @@ export async function updateBulkInventory(req, res) {
     }
 }
 
-// export async function icountInfo(req, res) {
-//     try {
-//         const { items } = req.body
-//         const myItems = items.map(item => {
-//             return {
-//                 doctype: item.doctype,
-//                 inventory_item_makat: item.inventory_item_makat,
-//                 description: item.description,
-//                 quantity: +item.quantity,
-//                 sku: item.sku + '',
-//             }
-//         })
-//         const products = []
-//         for (const item of myItems) {
-//             if (item.doctype === 'invrec' || item.doctype === 'invoice') {
-//                 const product = await orderService.getBySKU(item.sku)
-//                 if (product) {
-//                     const updatedProduct = await orderService.updateInventory(product, -item.quantity)
-//                     products.push(updatedProduct)
-//                 }
-//             }
-//         }
-//         res.json(products)
-//     } catch (err) {
-//         logger.error('Failed to update inventory from Icount', err)
-//         res.status(500).send({ err: 'Failed to update inventory from Icount' })
-//     }
-// }
+export async function icountInfo(req, res) {
+    try {
+        const { items } = req.body
+        const myItems = items.map(item => {
+            return {
+                doctype: item.doctype,
+                inventory_item_makat: item.inventory_item_makat,
+                description: item.description,
+                quantity: +item.quantity,
+                sku: item.sku + '',
+            }
+        })
+        const products = []
+        const productSKUs = []
+        for (const item of myItems) {
+            if (item.doctype === 'invrec' || item.doctype === 'invoice') {
+                const product = await orderService.getBySKU(item.sku)
+                if (product) {
+                    const updatedProduct = await orderService.updateInventory(product, -item.quantity)
+                    products.push(updatedProduct)
+                    productSKUs.push(updatedProduct.SKU)
+                }
+            }
+        }
+        logService.addNewIcountLog({ quantity: products.length, products, SKUs: productSKUs })
+        res.json(products)
+    } catch (err) {
+        logger.error('Failed to update inventory from Icount', err)
+        res.status(500).send({ err: 'Failed to update inventory from Icount' })
+    }
+}

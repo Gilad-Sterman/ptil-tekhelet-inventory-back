@@ -5,7 +5,8 @@ import { dbService } from '../../services/db.service.js'
 
 export const logService = {
     addNewLog,
-    deleteMany
+    addNewIcountLog
+    // deleteMany
 }
 
 async function addNewLog({ type, userName, amount, description, products, SKUs }) {
@@ -19,6 +20,24 @@ async function addNewLog({ type, userName, amount, description, products, SKUs }
             amount,
         }
         if (products) logToAdd.products = products
+        const collection = await dbService.getCollection('logs')
+        await collection.insertOne(logToAdd)
+        return logToAdd
+    } catch (err) {
+        logger.error('cannot insert log', err)
+        throw err
+    }
+}
+
+async function addNewIcountLog({ quantity, products, SKUs }) {
+    try {
+        const logToAdd = {
+            date: new Date,
+            type: 'New From Icount',
+            products, 
+            SKUs,
+            quantity,
+        }
         const collection = await dbService.getCollection('logs')
         await collection.insertOne(logToAdd)
         return logToAdd
