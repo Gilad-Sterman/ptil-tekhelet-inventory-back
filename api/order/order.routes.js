@@ -11,5 +11,5 @@ orderRoutes.put('/', updateInventory)
 orderRoutes.put('/bulk', updateBulkInventory)
 orderRoutes.put('/:SKU', updateInventoryBySKU)
 orderRoutes.post('/new', addNewProduct)
-// orderRoutes.post('/icount', icountInfo)
+orderRoutes.post('/icount', icountInfo)
 
