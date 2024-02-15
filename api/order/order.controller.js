@@ -146,6 +146,7 @@ export async function updateBulkInventory(req, res) {
 export async function icountInfo(req, res) {
     try {
         const { items } = req.body
+        console.log('got from icount', items);
         const myItems = items.map(item => {
             return {
                 doctype: item.doctype,
@@ -155,6 +156,7 @@ export async function icountInfo(req, res) {
                 sku: item.sku + '',
             }
         })
+        console.log('myItems:', myItems);
         const products = []
         const productSKUs = []
         for (const item of myItems) {
