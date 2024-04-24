@@ -181,8 +181,8 @@ export async function icountInfo(req, res) {
                     totalDollars: (item.currency === 2) ? (item.unitprice * item.quantity) : -1,
                     data: getData(item.sku),
                     item_id: item.item_id,
-                    created_date: Date.now(),
-                    updated_date: Date.now()
+                    created_date: getDate(),
+                    updated_date: getDate()
                 }
             })
             console.log('myItems:', myItems);
@@ -219,4 +219,8 @@ function getData(sku) {
     }
 
     return data
+}
+
+function getDate(){
+    return new Date()
 }
