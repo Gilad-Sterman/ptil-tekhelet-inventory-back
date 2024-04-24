@@ -159,14 +159,14 @@ export async function icountInfo(req, res) {
         if (req.headers['x-icount-secret'] && req.headers['x-icount-secret'] in stores) {
             res.status(200).json({ message: 'thanks' })
             const { items } = req.body
-            console.log('got from icount', items)
+            // console.log('got from icount', items)
             const myItems = items.map(item => {
                 return {
                     docnum: item.docnum,
                     doctype: item.doctype,
-                    clientname: item.clientname,
+                    clientname: req.body.clientname,
                     store: stores[req.headers['x-icount-secret']],
-                    date: item.timeissued,
+                    date: req.body.timeissued,
                     inventory_item_makat: item.inventory_item_makat,
                     description: item.description,
                     unitprice: item.unitprice,
@@ -180,7 +180,9 @@ export async function icountInfo(req, res) {
                     total: (item.currency === 2) ? (item.unitprice * item.quantity * DOLLAR_RATE) : (item.unitprice * item.quantity),
                     totalDollars: (item.currency === 2) ? (item.unitprice * item.quantity) : -1,
                     data: getData(item.sku),
-                    item_id: item.item_id
+                    item_id: item.item_id,
+                    created_date: Date.now(),
+                    updated_date: Date.now()
                 }
             })
             console.log('myItems:', myItems);
