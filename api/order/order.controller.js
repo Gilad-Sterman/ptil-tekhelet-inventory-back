@@ -185,7 +185,7 @@ export async function icountInfo(req, res) {
                     updated_date: getDate()
                 }
             })
-            console.log('myItems:', myItems);
+            // console.log('myItems:', myItems);
             const products = []
             const productSKUs = []
             for (const item of myItems) {

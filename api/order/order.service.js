@@ -284,6 +284,8 @@ async function getData(sku) {
 
             data.beged.name = bName['item-Heb']
             data.beged.code = parseInt(sku.substring(1, 3))
+            data.size.code = parseInt(sku.substring(3, 5))
+            data.size.name = parseInt(sku.substring(3, 5))
             data.ptil.name = pName['item-Heb']
             data.ptil.code = parseInt(sku.substring(5, 7))
             data.tying.name = tName['item-Heb']
