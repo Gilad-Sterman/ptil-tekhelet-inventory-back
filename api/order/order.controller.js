@@ -159,7 +159,7 @@ export async function icountInfo(req, res) {
         if (req.headers['x-icount-secret'] && req.headers['x-icount-secret'] in stores) {
             res.status(200).json({ message: 'thanks' })
             const { items } = req.body
-            console.log('got from icount', items)
+            // console.log('got from icount', items)
             const myItems = items.map(item => {
                 return {
                     docnum: +item.docnum,
@@ -185,7 +185,7 @@ export async function icountInfo(req, res) {
                     updated_date: getDate()
                 }
             })
-            console.log('myItems:', myItems);
+            // console.log('myItems:', myItems);
             const products = []
             const productSKUs = []
             for (const item of myItems) {
