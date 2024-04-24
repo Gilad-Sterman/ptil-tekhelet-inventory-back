@@ -179,7 +179,7 @@ export async function icountInfo(req, res) {
                     sku: item.sku + '',
                     total: (item.currency === 2) ? (item.unitprice * item.quantity * DOLLAR_RATE) : (item.unitprice * item.quantity),
                     totalDollars: (item.currency === 2) ? (item.unitprice * item.quantity) : -1,
-                    data: getData(item.sku),
+                    data: {},
                     item_id: item.item_id,
                     created_date: getDate(),
                     updated_date: getDate()
@@ -210,16 +210,16 @@ export async function icountInfo(req, res) {
     }
 }
 
-function getData(sku) {
-    const data = {
-        beged: { code: -1, name: '' },
-        size: { code: -1, name: '' },
-        ptil: { code: -1, name: '' },
-        tying: { code: -1, name: '' }
-    }
+// function getData(sku) {
+//     const data = {
+//         beged: { code: -1, name: '' },
+//         size: { code: -1, name: '' },
+//         ptil: { code: -1, name: '' },
+//         tying: { code: -1, name: '' }
+//     }
 
-    return data
-}
+//     return data
+// }
 
 function getDate(){
     return new Date()

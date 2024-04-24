@@ -1,0 +1,653 @@
+[{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9c4"
+  },
+  "Type": "beged",
+  "Code": "00",
+  "item-Heb": ""
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9c5"
+  },
+  "Type": "beged",
+  "Code": "01",
+  "item-Heb": "א.א. פס לבן",
+  "Item-Eng": "Basic Black"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9c6"
+  },
+  "Type": "beged",
+  "Code": "02",
+  "item-Heb": "א.א. פס שחור",
+  "Item-Eng": "Basic White"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9c7"
+  },
+  "Type": "beged",
+  "Code": "03",
+  "item-Heb": "בית יוסף",
+  "Item-Eng": "Bet Yosef"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9c8"
+  },
+  "Type": "beged",
+  "Code": "04",
+  "item-Heb": "ברקת",
+  "Item-Eng": "Bareket"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9c9"
+  },
+  "Type": "beged",
+  "Code": "05",
+  "item-Heb": "גוונים אפור כחול",
+  "Item-Eng": "Gevanim"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9ca"
+  },
+  "Type": "beged",
+  "Code": "06",
+  "item-Heb": "מעלות",
+  "Item-Eng": "Maalot"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9cb"
+  },
+  "Type": "beged",
+  "Code": "07",
+  "item-Heb": "ספיר",
+  "Item-Eng": "Sapir"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9cc"
+  },
+  "Type": "beged",
+  "Code": "08",
+  "item-Heb": "תשבץ כסף וכחול",
+  "Item-Eng": "Tashbetz Blue"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9cd"
+  },
+  "Type": "beged",
+  "Code": "09",
+  "item-Heb": "תשבץ פס לבן",
+  "Item-Eng": "Tashbetz White"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9ce"
+  },
+  "Type": "beged",
+  "Code": "10",
+  "item-Heb": "תשבץ פס שחור",
+  "Item-Eng": "Tashbetz Black"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9cf"
+  },
+  "Type": "beged",
+  "Code": "11",
+  "item-Heb": "א.א. פס כחול",
+  "Item-Eng": "Basic Blue"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9d0"
+  },
+  "Type": "beged",
+  "Code": "12",
+  "item-Heb": "בית יוסף תשבץ פס לבן",
+  "Item-Eng": "Tashbetz Bet Yosef"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9d1"
+  },
+  "Type": "beged",
+  "Code": "13",
+  "item-Heb": "דוד",
+  "Item-Eng": "David"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9d2"
+  },
+  "Type": "beged",
+  "Code": "49",
+  "item-Heb": "טג- אחר",
+  "Item-Eng": "TG - Other"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9d3"
+  },
+  "Type": "beged",
+  "Code": "50",
+  "item-Heb": "גופיה כותנה",
+  "Item-Eng": "TankTop Cotton"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9d4"
+  },
+  "Type": "beged",
+  "Code": "51",
+  "item-Heb": "גופיה צמר",
+  "Item-Eng": "TankTop Wool"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9d5"
+  },
+  "Type": "beged",
+  "Code": "52",
+  "item-Heb": "כותנה O",
+  "Item-Eng": "Cotton O"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9d6"
+  },
+  "Type": "beged",
+  "Code": "53",
+  "item-Heb": "כותנה",
+  "Item-Eng": "Cotton"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9d7"
+  },
+  "Type": "beged",
+  "Code": "54",
+  "item-Heb": "צמר לבן",
+  "Item-Eng": "Wool White"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9d8"
+  },
+  "Type": "beged",
+  "Code": "55",
+  "item-Heb": "צמר לבן פרנג",
+  "Item-Eng": "Wool White Fringes"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9d9"
+  },
+  "Type": "beged",
+  "Code": "56",
+  "item-Heb": "צמר שחור",
+  "Item-Eng": "Wool Black"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9da"
+  },
+  "Type": "beged",
+  "Code": "57",
+  "item-Heb": "צמר שחור פרנג",
+  "Item-Eng": "Wool Blaic Fringes"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9db"
+  },
+  "Type": "beged",
+  "Code": "58",
+  "item-Heb": "רשת",
+  "Item-Eng": "Net"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9dc"
+  },
+  "Type": "beged",
+  "Code": "60",
+  "item-Heb": "גופיה ירוקה",
+  "Item-Eng": "TankTop Green"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9dd"
+  },
+  "Type": "beged",
+  "Code": "99",
+  "item-Heb": "טק- אחר",
+  "Item-Eng": "TK - Other"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9de"
+  },
+  "Type": "ptil",
+  "Code": "00",
+  "item-Heb": ""
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9df"
+  },
+  "Type": "ptil",
+  "Code": "01",
+  "item-Heb": "ראבד",
+  "Item-Eng": "Raavad"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9e0"
+  },
+  "Type": "ptil",
+  "Code": "02",
+  "item-Heb": "ראבד עבה",
+  "Item-Eng": "Raavad Thick"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9e1"
+  },
+  "Type": "ptil",
+  "Code": "03",
+  "item-Heb": "ראבד ח/ג",
+  "Item-Eng": "Raavad C/G"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9e2"
+  },
+  "Type": "ptil",
+  "Code": "04",
+  "item-Heb": "ראבד ח/ג עבה",
+  "Item-Eng": "Raavad C/G Thick"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9e3"
+  },
+  "Type": "ptil",
+  "Code": "05",
+  "item-Heb": "ראבד 7",
+  "Item-Eng": "Raavad 7"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9e4"
+  },
+  "Type": "ptil",
+  "Code": "06",
+  "item-Heb": "ראבד 7 עבה",
+  "Item-Eng": "Raavad 7 Thick"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9e5"
+  },
+  "Type": "ptil",
+  "Code": "07",
+  "item-Heb": "ראבד עבה ניפוץ",
+  "Item-Eng": "Raavad Thick Niputz"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9e6"
+  },
+  "Type": "ptil",
+  "Code": "08",
+  "item-Heb": "ראבד ח/ג עבה ניפוץ",
+  "Item-Eng": "Raavad C/G Thick Niputz"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9e7"
+  },
+  "Type": "ptil",
+  "Code": "09",
+  "item-Heb": "רמבם 13",
+  "Item-Eng": "Rambam 13"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9e8"
+  },
+  "Type": "ptil",
+  "Code": "10",
+  "item-Heb": "רמבם 13 עבה",
+  "Item-Eng": "Rambam 13 Thick"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9e9"
+  },
+  "Type": "ptil",
+  "Code": "11",
+  "item-Heb": "רמבם 7",
+  "Item-Eng": "Rambam 7"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9ea"
+  },
+  "Type": "ptil",
+  "Code": "12",
+  "item-Heb": "רמבם 7 עבה",
+  "Item-Eng": "Rambam 7 Thick"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9eb"
+  },
+  "Type": "ptil",
+  "Code": "13",
+  "item-Heb": "רמבם עבה ניפוץ",
+  "Item-Eng": "Rambam 13 Thick Niputz"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9ec"
+  },
+  "Type": "ptil",
+  "Code": "14",
+  "item-Heb": "תוספות",
+  "Item-Eng": "Tosafot"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9ed"
+  },
+  "Type": "ptil",
+  "Code": "15",
+  "item-Heb": "תוספות עבה",
+  "Item-Eng": "Tosafot Thick"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9ee"
+  },
+  "Type": "ptil",
+  "Code": "16",
+  "item-Heb": "תוספות עבה ניפוץ",
+  "Item-Eng": "Tosafot Thick Niputz"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9ef"
+  },
+  "Type": "ptil",
+  "Code": "17",
+  "item-Heb": "תוספות ח/ג",
+  "Item-Eng": "Tosafot C/G"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9f0"
+  },
+  "Type": "ptil",
+  "Code": "18",
+  "item-Heb": "תוספות ח/ג עבה",
+  "Item-Eng": "Tosafot C/G Thick"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9f1"
+  },
+  "Type": "ptil",
+  "Code": "19",
+  "item-Heb": "תוספות שכטר",
+  "Item-Eng": "Tosafot R Schachter"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9f2"
+  },
+  "Type": "ptil",
+  "Code": "20",
+  "item-Heb": "תוספות שכטר עבה",
+  "Item-Eng": "Tosafot R Schachter Thick"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9f3"
+  },
+  "Type": "ptil",
+  "Code": "21",
+  "item-Heb": "תוספות 7",
+  "Item-Eng": "Tosafot 7"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9f4"
+  },
+  "Type": "ptil",
+  "Code": "22",
+  "item-Heb": "תוספות 7 עבה",
+  "Item-Eng": "Tosafot 7 Thick"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9f5"
+  },
+  "Type": "ptil",
+  "Code": "23",
+  "item-Heb": "תוספות ח/ג עבה ניפוץ",
+  "Item-Eng": "Tosafot C/G Thick Niputz"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9f6"
+  },
+  "Type": "ptil",
+  "Code": "24",
+  "item-Heb": "תוספות ר' שכטר עבה ניפוץ",
+  "Item-Eng": "Tosafot R Schachter Thick Niputz"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9f7"
+  },
+  "Type": "ptil",
+  "Code": "25",
+  "item-Heb": "תוספות 7 עבה ניפוץ",
+  "Item-Eng": "Tosafot 7 Thick Niputz"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9f8"
+  },
+  "Type": "ptil",
+  "Code": "26",
+  "item-Heb": "רמבם 7 עבה ניפוץ",
+  "Item-Eng": "Rambam 7 Thick Niputz"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9f9"
+  },
+  "Type": "ptil",
+  "Code": "99",
+  "item-Heb": "אחר",
+  "Item-Eng": "Other"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9fa"
+  },
+  "Type": "tying",
+  "Code": "00"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9fb"
+  },
+  "Type": "tying",
+  "Code": "01",
+  "item-Heb": "חינוך",
+  "Item-Eng": "Chinuch"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9fc"
+  },
+  "Type": "tying",
+  "Code": "02",
+  "item-Heb": "גרא",
+  "Item-Eng": "GRA"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9fd"
+  },
+  "Type": "tying",
+  "Code": "03",
+  "item-Heb": "רמבם 13",
+  "Item-Eng": "Rambam 13"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9fe"
+  },
+  "Type": "tying",
+  "Code": "04",
+  "item-Heb": "רמבם 7",
+  "Item-Eng": "Rambam 7"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6e9ff"
+  },
+  "Type": "tying",
+  "Code": "05",
+  "item-Heb": "ראבד",
+  "Item-Eng": "Raavad"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6ea00"
+  },
+  "Type": "tying",
+  "Code": "06",
+  "item-Heb": "ראבד 7",
+  "Item-Eng": "Raavad 7"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6ea01"
+  },
+  "Type": "tying",
+  "Code": "07",
+  "item-Heb": "ראדזין/ארי",
+  "Item-Eng": "Radzyn/ARI"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6ea02"
+  },
+  "Type": "tying",
+  "Code": "08",
+  "item-Heb": "טל אשכנזי (7,8,11,13)",
+  "Item-Eng": "Tal Ashkenazi (7,8,11,13)"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6ea03"
+  },
+  "Type": "tying",
+  "Code": "09",
+  "item-Heb": "טל ספרדי (7,8,11,13)",
+  "Item-Eng": "Tal Sephardi (7,8,11,13)"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6ea04"
+  },
+  "Type": "tying",
+  "Code": "10",
+  "item-Heb": "ר עמרם גאון",
+  "Item-Eng": "R Amram Gaon"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6ea05"
+  },
+  "Type": "tying",
+  "Code": "11",
+  "item-Heb": "בן איש חי",
+  "Item-Eng": "Ben Ish Chai"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6ea06"
+  },
+  "Type": "tying",
+  "Code": "12",
+  "item-Heb": "הרב שכטר",
+  "Item-Eng": "Rav Schachter"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6ea07"
+  },
+  "Type": "tying",
+  "Code": "13",
+  "item-Heb": "הרב הרוש",
+  "Item-Eng": "Rav Harush"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6ea08"
+  },
+  "Type": "tying",
+  "Code": "14",
+  "item-Heb": "תוספות",
+  "Item-Eng": "Tosafot"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6ea09"
+  },
+  "Type": "tying",
+  "Code": "15",
+  "item-Heb": "צפון אפריקה",
+  "Item-Eng": "North Africa (10,5,6,5)"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6ea0a"
+  },
+  "Type": "tying",
+  "Code": "16",
+  "item-Heb": "ספרדי ספירלה",
+  "Item-Eng": "Sephardi Spiral"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6ea0b"
+  },
+  "Type": "tying",
+  "Code": "98",
+  "item-Heb": "קושר לבד",
+  "Item-Eng": "Self Tied"
+},
+{
+  "_id": {
+    "$oid": "6628e209fbf17228b3d6ea0c"
+  },
+  "Type": "tying",
+  "Code": "99",
+  "item-Heb": "אחר",
+  "Item-Eng": "Other"
+}]

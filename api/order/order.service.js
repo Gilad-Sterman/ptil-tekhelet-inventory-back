@@ -258,11 +258,41 @@ async function addNewProduct(Cost, DescriptionEng, DescriptionHeb, Inventory, Pr
 
 async function newOrderFromIcount(item) {
     try {
+        item.data = await getData(item.sku)
         const collection = await dbService.getCollection('orders')
         await collection.insertOne(item)
         return item
     } catch (err) {
         logger.error('cannot insert new order', err)
+        throw err
+    }
+}
+
+async function getData(sku) {
+    try {
+        const data = {
+            beged: { code: -1, name: '' },
+            size: { code: -1, name: '' },
+            ptil: { code: -1, name: '' },
+            tying: { code: -1, name: '' }
+        }
+        if (sku) {
+            const collection = await dbService.getCollection('MongoDataCodes')
+            const bName = await collection.findOne({ '$and': [{ Type: 'beged' }, { Code: parseInt(sku.substring(1, 3)) }] })
+            const pName = await collection.findOne({ '$and': [{ Type: 'ptil' }, { Code: parseInt(sku.substring(5, 7)) }] })
+            const tName = await collection.findOne({ '$and': [{ Type: 'tying' }, { Code: parseInt(sku.substring(7, 9)) }] })
+
+            data.beged.name = bName['item-Heb']
+            data.beged.code = parseInt(sku.substring(1, 3))
+            data.ptil.name = pName['item-Heb']
+            data.ptil.code = parseInt(sku.substring(5, 7))
+            data.tying.name = tName['item-Heb']
+            data.tying.code = parseInt(sku.substring(7, 9))
+        }
+
+        return data
+    } catch (err) {
+        logger.error('cannot get item data', err)
         throw err
     }
 }
