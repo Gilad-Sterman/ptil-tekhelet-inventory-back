@@ -256,6 +256,17 @@ async function addNewProduct(Cost, DescriptionEng, DescriptionHeb, Inventory, Pr
     }
 }
 
+async function newOrderFromIcount(item) {
+    try {
+        const collection = await dbService.getCollection('orders')
+        await collection.insertOne(item)
+        return item
+    } catch (err) {
+        logger.error('cannot insert new order', err)
+        throw err
+    }
+}
+
 export const orderService = {
     query,
     getById,
@@ -265,5 +276,6 @@ export const orderService = {
     updateInventory,
     setInventory,
     add,
+    newOrderFromIcount,
     addNewProduct
 }

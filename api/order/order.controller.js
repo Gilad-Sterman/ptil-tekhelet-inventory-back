@@ -2,6 +2,17 @@ import { logger } from "../../services/logger.service.js";
 import { logService } from "./log.service.js";
 import { orderService } from "./order.service.js";
 
+const stores = {
+    '60AEB6D2FD57E3EA': 'Factory',
+    'Factory': 'Factory',
+    '502C3C05D26AA1B8': 'US Shopify',
+    'US': 'US Shopify',
+    '426A9FEC2DE39376': 'Israel Shopify',
+    'Israel': 'Israel Shopify',
+}
+
+const DOLLAR_RATE = 3.76
+
 
 export async function getOrders(req, res) {
     const { from, to, maxNum, sortBy, txt, sortDir, categories, moreCategories, specificCodes } = req.query
@@ -145,34 +156,65 @@ export async function updateBulkInventory(req, res) {
 
 export async function icountInfo(req, res) {
     try {
-        const { items } = req.body
-        console.log('got from icount', items);
-        const myItems = items.map(item => {
-            return {
-                doctype: item.doctype,
-                inventory_item_makat: item.inventory_item_makat,
-                description: item.description,
-                quantity: +item.quantity,
-                sku: item.sku + '',
-            }
-        })
-        console.log('myItems:', myItems);
-        const products = []
-        const productSKUs = []
-        for (const item of myItems) {
-            if (item.doctype === 'invrec' || item.doctype === 'invoice') {
-                const product = await orderService.getBySKU(item.sku)
-                if (product) {
-                    const updatedProduct = await orderService.updateInventory(product, -item.quantity)
-                    products.push(updatedProduct)
-                    productSKUs.push(updatedProduct.SKU)
+        if (req.headers['x-icount-secret'] && req.headers['x-icount-secret'] in stores) {
+            res.status(200).json({ message: 'thanks' })
+            const { items } = req.body
+            console.log('got from icount', items)
+            const myItems = items.map(item => {
+                return {
+                    docnum: item.docnum,
+                    doctype: item.doctype,
+                    clientname: item.clientname,
+                    store: stores[req.headers['x-icount-secret']],
+                    date: item.timeissued,
+                    inventory_item_makat: item.inventory_item_makat,
+                    description: item.description,
+                    unitprice: item.unitprice,
+                    quantity: +item.quantity,
+                    s_refunded: item.is_refunded,
+                    currency: item.currency,
+                    rate: item.rate,
+                    vat_exempt: item.vat_exempt,
+                    income_type_id: item.income_type_id,
+                    sku: item.sku + '',
+                    total: (item.currency === 2) ? (item.unitprice * item.quantity * DOLLAR_RATE) : (item.unitprice * item.quantity),
+                    totalDollars: (item.currency === 2) ? (item.unitprice * item.quantity) : -1,
+                    data: getData(item.sku),
+                    item_id: item.item_id
+                }
+            })
+            console.log('myItems:', myItems);
+            const products = []
+            const productSKUs = []
+            for (const item of myItems) {
+                const savedOrder = await orderService.newOrderFromIcount(item)
+                if (item.doctype === 'invrec' || item.doctype === 'invoice') {
+                    const product = await orderService.getBySKU(item.sku)
+                    if (product) {
+                        const updatedProduct = await orderService.updateInventory(product, -item.quantity)
+                        products.push(updatedProduct)
+                        productSKUs.push(updatedProduct.SKU)
+                    }
                 }
             }
+            logService.addNewIcountLog({ quantity: products.length, products, SKUs: productSKUs })
+            // res.json(products)
+        } else {
+            res.status(404).json({ message: 'unauthed' })
         }
-        logService.addNewIcountLog({ quantity: products.length, products, SKUs: productSKUs })
-        res.json(products)
     } catch (err) {
         logger.error('Failed to update inventory from Icount', err)
         res.status(500).send({ err: 'Failed to update inventory from Icount' })
     }
+}
+
+function getData(sku) {
+    const data = {
+        beged: { code: -1, name: '' },
+        size: { code: -1, name: '' },
+        ptil: { code: -1, name: '' },
+        tying: { code: -1, name: '' }
+    }
+
+    return data
 }
