@@ -162,11 +162,11 @@ export async function icountInfo(req, res) {
             // console.log('got from icount', items)
             const myItems = items.map(item => {
                 return {
-                    docnum: item.docnum,
+                    docnum: +item.docnum,
                     doctype: item.doctype,
                     clientname: req.body.clientname,
                     store: stores[req.headers['x-icount-secret']],
-                    date: req.body.timeissued,
+                    date: new Date(req.body.timeissued),
                     inventory_item_makat: item.inventory_item_makat,
                     description: item.description,
                     unitprice: item.unitprice,
